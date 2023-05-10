@@ -11,3 +11,7 @@ si le site ne marche pas après avoir cloner le github c'est qu'il manque le dos
 
 installation de tailwind : 
 - https://tailwindcss.com/docs/installation
+
+mise à jour le 10/ 05 /23
+- à faire exporter les icones en .vue
+- faire le footer (bientôt le header)
