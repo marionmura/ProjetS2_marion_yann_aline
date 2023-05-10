@@ -9,3 +9,5 @@ installation du package node avec:
 - npm run dev
 si le site ne marche pas après avoir cloner le github c'est qu'il manque le dossier node_modules qui est dans le githignore
 
+installation de tailwind : 
+- https://tailwindcss.com/docs/installation
