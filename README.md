@@ -1,7 +1,7 @@
 # ProjetS2_marion_yann_aline
 Ici le développement du projet de S2
 
-
+# Ce qui a été fait pour l'installation 
 installation du package node avec:
 - npm init
 - npm install
