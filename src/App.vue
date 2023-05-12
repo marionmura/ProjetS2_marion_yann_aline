@@ -6,6 +6,6 @@ import HeaderPage from './components/HeaderPage.vue';
 
 <template>
   <HeaderPage/>
-  <main>Le contenu principal</main>
+  <main class="font-bold">Le contenu principal</main>
   <FooterPage/>
 </template>
