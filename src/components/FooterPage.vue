@@ -8,12 +8,12 @@ import Facebook from './icons/Facebook.vue'
 
 <template>
 
-<footer class="bg-indigo-500">
+<footer class="flex flex-col bg-indigo-500">
 
     <nav>
 
-        <div>
-            <h4>Abonnement</h4>
+        <div class="space-y-4">
+            <h4 class="font-bold">Abonnement</h4>
             <ul>
                 <li><a href="#">Voir l'offre</a></li>
                 <li><a href="#">Souscrire</a></li>
