@@ -13,7 +13,7 @@ import Facebook from './icons/Facebook.vue'
     <nav>
 
         <div class="space-y-4">
-            <h4 class="font-bold">Abonnement</h4>
+            <h4 class="font-bold">Abonnrerernernernement</h4>
             <ul>
                 <li><a href="#">Voir l'offre</a></li>
                 <li><a href="#">Souscrire</a></li>
