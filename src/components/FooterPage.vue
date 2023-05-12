@@ -1,6 +1,6 @@
 <template>
 
-<footer>
+<footer class="bg-indigo-500">
 
     <nav>
 
