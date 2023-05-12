@@ -1,3 +1,11 @@
+<script setup lang="ts">
+import Facebook from './icons/Facebook.vue'
+</script>
+
+
+
+
+
 <template>
 
 <footer class="bg-indigo-500">
@@ -39,7 +47,7 @@
         <p>Suivez-nous</p>
 
         <ul>
-            <li></li>
+            <li><Facebook /></li>
             <li></li>
             <li></li>
             <li></li>
