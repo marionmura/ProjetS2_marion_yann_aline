@@ -13,10 +13,20 @@ import Facebook from './icons/Facebook.vue'
     <nav>
 
         <div>
-            <h4>Mentions Légales</h4>
+            <h4>Abonnement</h4>
             <ul>
-                <li><a href="#">Politique des cookies</a></li>
-                <li><a href="#">Politique de confidentialité</a></li>
+                <li><a href="#">Voir l'offre</a></li>
+                <li><a href="#">Souscrire</a></li>
+            </ul>
+        </div>
+
+        <span></span>
+
+        <div>
+            <h4>Articles</h4>
+            <ul>
+                <li><a href="#">Voir les articles récents</a></li>
+                <li><a href="#">Voir les articles tendances</a></li>
             </ul>
         </div>
 
@@ -33,10 +43,10 @@ import Facebook from './icons/Facebook.vue'
         <span></span>
 
         <div>
-            <h4>Abonnement</h4>
+            <h4>Mentions Légales</h4>
             <ul>
-                <li><a href="#">Voir l'offre</a></li>
-                <li><a href="#">Souscrire</a></li>
+                <li><a href="#">Politique des cookies</a></li>
+                <li><a href="#">Politique de confidentialité</a></li>
             </ul>
         </div>
 
