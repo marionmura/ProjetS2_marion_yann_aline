@@ -8,12 +8,12 @@ import Facebook from './icons/Facebook.vue'
 
 <template>
 
-<footer class="flex flex-col bg-indigo-500">
+<footer class="flex flex-col py-72 bg-indigo-600">
 
     <nav>
 
         <div class="space-y-4">
-            <h4 class="font-bold">Abonnrerernernernement</h4>
+            <h4 class="font-bold text-white">Abonnement</h4>
             <ul>
                 <li><a href="#">Voir l'offre</a></li>
                 <li><a href="#">Souscrire</a></li>
@@ -23,7 +23,7 @@ import Facebook from './icons/Facebook.vue'
         <span></span>
 
         <div>
-            <h4>Articles</h4>
+            <h4 class="font-bold">Articles</h4>
             <ul>
                 <li><a href="#">Voir les articles récents</a></li>
                 <li><a href="#">Voir les articles tendances</a></li>
