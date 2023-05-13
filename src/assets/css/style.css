@@ -7,10 +7,13 @@
       @apply font-bold;
     }
     h1 {
-      @apply text-6xl;
+      @apply font-cabin text-6xl;
     }
     h4{
-      @apply text-white;
+      @apply font-dosis font-bold text-white;
+    }
+    p{
+      @apply font-jost;
     }
     /*faire une class pour les p txt blanc > mais mettre tout le site en fond noir avant*/
   }

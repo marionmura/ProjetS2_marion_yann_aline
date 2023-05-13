@@ -12,8 +12,9 @@ module.exports = {
       
     },
     fontFamily: {
-      sans: ['Mulish', 'sans-serif'],
-      serif: ['Space Mono', 'monospace']
+      jost: ['Jost', 'sans-serif'],
+      cabin: ['Cabin', 'sans-serif'],
+      dosis: ['Dosis', 'sans-serif'],
     },
     extend: {
       gridTemplateColumns: {
