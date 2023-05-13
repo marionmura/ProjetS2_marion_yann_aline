@@ -7,9 +7,9 @@ import Twitter from './icons/Twitter.vue';
 
 <template>
 
-    <footer class="flex flex-col bg-grisfooter">
+    <footer class="pl-20 pt-20 pb-10 flex flex-col bg-grisfooter">
 
-        <nav class="ml-5">
+        <nav class=" flex flex-row gap-10">
 
             <div class="space-y-4 mb-6">
                 <h4 >Abonnement</h4>
@@ -51,9 +51,9 @@ import Twitter from './icons/Twitter.vue';
 
         </nav>
 
-        <div class="space-y-4 mb-6 ml-5">
+        <div class="space-y-4 mb-6">
 
-            <h4 class="text-violet">Suivez-nous</h4>
+            <h4 class="font-bold text-violet">Suivez-nous</h4>
 
             <ul class="flex flex-row gap-4">
                 <li><Tiktok /></li>
