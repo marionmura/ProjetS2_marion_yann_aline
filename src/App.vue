@@ -6,6 +6,6 @@ import HeaderPage from './components/HeaderPage.vue';
 
 <template>
   <HeaderPage/>
-  <RouterView/>
+  <!-- <RouterView/> -->
   <FooterPage/>
 </template>
