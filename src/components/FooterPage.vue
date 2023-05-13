@@ -1,6 +1,8 @@
 <script setup lang="ts">
+import Tiktok from './icons/Tiktok.vue';
+import Instagram from './icons/Instagram.vue';
 import Facebook from './icons/Facebook.vue';
-
+import Twitter from './icons/Twitter.vue';
 </script>
 
 <template>
@@ -54,10 +56,10 @@ import Facebook from './icons/Facebook.vue';
             <p>Suivez-nous</p>
 
             <ul>
-                <li><Facebook /></li>
-                <li></li>
-                <li></li>
-                <li></li>
+                <li><Tiktok /></li>
+                <li><Instagram /></li>
+                <li><Facebook/></li>
+                <li><Twitter/></li>
             </ul>
 
         </div>
