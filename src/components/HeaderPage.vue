@@ -1,5 +1,4 @@
 <script setup lang="ts">
-import IconLogo from './icons/IconLogo.vue';
 import { ref } from 'vue';
 const menuIsOpen = ref(false)
 
