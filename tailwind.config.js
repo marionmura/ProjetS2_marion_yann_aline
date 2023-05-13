@@ -9,7 +9,7 @@ module.exports = {
       white: '#ffffff',
       black: '#000000',
       transparent: 'transparent',
-      
+      violet:'#92A1FF',
     },
     fontFamily: {
       jost: ['Jost', 'sans-serif'],
