@@ -9,7 +9,7 @@ import Twitter from './icons/Twitter.vue';
 
     <footer class="pl-10 pt-10 flex flex-col bg-grisfooter">
 
-        <nav class=" flex flex-col gap-2">
+        <nav class=" flex flex-col gap-2 lg:grid lg:grid-cols-4">
 
             <div class="space-y-4 mb-5">
                 <h4 >Abonnement</h4>
@@ -17,9 +17,8 @@ import Twitter from './icons/Twitter.vue';
                     <li class="text-white"><a href="#">Voir l'offre</a></li>
                     <li class="text-white"><a href="#">Souscrire</a></li>
                 </ul>
+                <span class="block h-[1px] w-[250px] bg-white lg:invisible lg:h-[0px] lg:w-[0px]"></span>
             </div>
-
-            <span class="block h-[1px] w-[250px] bg-white"></span>
 
             <div class="space-y-4 mb-5">
                 <h4>Articles</h4>
@@ -27,9 +26,9 @@ import Twitter from './icons/Twitter.vue';
                     <li class="text-white"><a href="#">Voir les articles récents</a></li>
                     <li class="text-white"><a href="#">Voir les articles tendances</a></li>
                 </ul>
-            </div>
 
-            <span class="block h-[1px] w-[250px] bg-white"></span>
+                <span class="block h-[1px] w-[250px] bg-white lg:invisible lg:h-[0px] lg:w-[0px]"></span>
+            </div>
 
             <div class="space-y-4 mb-5">
                 <h4>Contact</h4>
@@ -37,9 +36,10 @@ import Twitter from './icons/Twitter.vue';
                     <li class="text-white"><a href="#">Contactez-nous</a></li>
                     <li class="text-white"><a href="#">Qui sommes-nous ?</a></li>
                 </ul>
+
+                <span class="block h-[1px] w-[250px] bg-white lg:invisible lg:h-[0px] lg:w-[0px]"></span>
             </div>
 
-            <span class="block h-[1px] w-[250px] bg-white"></span>
 
             <div class="space-y-4 mb-6">
                 <h4>Mentions Légales</h4>
