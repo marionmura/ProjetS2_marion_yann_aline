@@ -2,13 +2,15 @@
 import { ref } from 'vue';
 const menuIsOpen = ref(false)
 
+import Usericon from './icons/Usericon.vue';
 </script>
 
-<template >
-    <header class="pt-5 bg-noirbackground text-violet">
+<template > 
+    <header class=" bg-noirbackground text-violet flex items-center h-20 max-w-full">
         <a href="/">
+            <Usericon/>
         </a>
-        <button class=" h-4 w-6 flex flex-col justify-between lg:hidden"  
+        <button class="h-4 w-6 flex flex-col justify-between lg:hidden"  
         @pointerdown="menuIsOpen = !menuIsOpen" >
             <span class="block h-[2px] w-full bg-violet transition duration-300" :class="{'translate-y-[8px] translate-x-[2px] rotate-45':menuIsOpen}"></span>
             <span class="block h-[2px] w-full bg-violet transition duration-300" :class="{'translate-y-[0px] -rotate-45':menuIsOpen}"></span>
@@ -28,11 +30,11 @@ const menuIsOpen = ref(false)
                 <li><a class="" href="">Articles récents</a></li>
                 <li><a class="" href="">Tous les articles</a></li>
             </ul>
-        
+                
         </nav>
-        <div class="invisible lg:visible flex items-center">
-            <button class="flex-1 m-2 p-2 bg-white rounded-lg text-noirbackground font-bold ">Connexion</button>
-            <button class="flex-1 m-2 p-2 bg-violet text-noirbackground font-bold rounded-lg">S'inscrire</button>
-        </div>
+        <div class="invisible h-[0] w-[0] lg:visible lg:h-[20px] lg:w-[10px] flex items-center">
+                <button class="flex-1 m-2 p-2 bg-white rounded-lg text-noirbackground font-bold ">Connexion</button>
+                <button class="flex-1 m-2 p-2 bg-violet text-noirbackground font-bold rounded-lg">S'inscrire</button>
+            </div>
     </header>
 </template>
