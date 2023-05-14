@@ -7,11 +7,11 @@ import Twitter from './icons/Twitter.vue';
 
 <template>
 
-    <footer class="pl-20 pt-20 pb-10 flex flex-col bg-grisfooter">
+    <footer class="pl-10 pt-10 flex flex-col bg-grisfooter">
 
-        <nav class=" flex flex-row gap-10">
+        <nav class=" flex flex-col gap-2">
 
-            <div class="space-y-4 mb-6">
+            <div class="space-y-4 mb-5">
                 <h4 >Abonnement</h4>
                 <ul class="ml-4">
                     <li class="text-white"><a href="#">Voir l'offre</a></li>
@@ -19,9 +19,9 @@ import Twitter from './icons/Twitter.vue';
                 </ul>
             </div>
 
-            <span></span>
+            <span class="block h-[1px] w-[250px] bg-white"></span>
 
-            <div class="space-y-4 mb-6">
+            <div class="space-y-4 mb-5">
                 <h4>Articles</h4>
                 <ul class="ml-4">
                     <li class="text-white"><a href="#">Voir les articles récents</a></li>
@@ -29,9 +29,9 @@ import Twitter from './icons/Twitter.vue';
                 </ul>
             </div>
 
-            <span></span>
+            <span class="block h-[1px] w-[250px] bg-white"></span>
 
-            <div class="space-y-4 mb-6">
+            <div class="space-y-4 mb-5">
                 <h4>Contact</h4>
                 <ul class="ml-4"> 
                     <li class="text-white"><a href="#">Contactez-nous</a></li>
@@ -39,7 +39,7 @@ import Twitter from './icons/Twitter.vue';
                 </ul>
             </div>
 
-            <span></span>
+            <span class="block h-[1px] w-[250px] bg-white"></span>
 
             <div class="space-y-4 mb-6">
                 <h4>Mentions Légales</h4>
@@ -51,7 +51,7 @@ import Twitter from './icons/Twitter.vue';
 
         </nav>
 
-        <div class="space-y-4 mb-6">
+        <div class="space-y-4 mb-10">
 
             <h4 class="font-bold text-violet">Suivez-nous</h4>
 
