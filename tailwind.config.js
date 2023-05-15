@@ -4,12 +4,15 @@ module.exports = {
   content: ['./index.html', './src/**/*.{vue,js,ts,jsx,tsx}'],
   theme: {
     colors: {
-      noirbackground: '#171C30',
+      noirbackground: '#0D0F1E',
+      grisbg:'#171C30',
       grisfooter: '#29325D',
       white: '#ffffff',
       black: '#000000',
       transparent: 'transparent',
       violet:'#92A1FF',
+      rouge:'#FF8484',
+      vert:'#92FFB1'
     },
     fontFamily: {
       jost: ['Jost', 'sans-serif'],
