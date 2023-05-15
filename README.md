@@ -12,9 +12,10 @@ si le site ne marche pas après avoir cloner le github c'est qu'il manque le dos
 installation de tailwind : 
 - https://tailwindcss.com/docs/installation
 
-mis à jour le 12/05 /23 
-- j'ai copié le dossier fait pour le conservatoire pcq gros soucis sur tailwindcss qui ne marchait plus du tout 
-- merge de la branche marion test car test effectué concluant !
+mis à jour le 15/05 /23 
+- installation pocketbase 
+adresse mail : marion.mura090@gmail.com
+mdp : pocketbase
 
 mise à jour le 10/ 05 /23
 - à faire exporter les icones en .vue
