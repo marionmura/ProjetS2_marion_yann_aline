@@ -35,9 +35,9 @@ export default {
     </div>
     
     <div class="mt-5 text-white">
-      <label class="text-violet" width="50px">Email </label><input type="email" id="login" placeholder="écrire ici" class="bg-grisbg border-2 rounded-md text-violet p-2 m-1 ">
+      <label class="text-violet" width="50px">Email </label><input type="email" id="login" placeholder="écrire ici" class="bg-grisbg border-2 rounded-md text-violet p-2 m-1 focus:outline-none focus:ring-2 focus:ring-rouge focus:border-0">
       <p></p>
-      <label class="text-violet" width="50px">Mot de passe  </label><input  type="password" id="passwd" placeholder="écrire ici" class="bg-grisbg border-2 rounded-md text-violet p-2 m-1" >
+      <label class="text-violet" width="50px">Mot de passe  </label><input  type="password" id="passwd" placeholder="écrire ici" class="bg-grisbg border-2 rounded-md text-violet p-2 m-1 focus:outline-none focus:ring-2 focus:ring-rouge focus:border-0" >
       <p></p>
       
       
