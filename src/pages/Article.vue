@@ -11,20 +11,20 @@ import Ampouleicon from '../components/icons/Ampouleicon.vue';
         <div class="flex flex-col">
             <RouterLink to="/Home">Home</RouterLink>
             <RouterLink to="/aPropos">A Propos</RouterLink>
+        </div>
+
+    <div class="px-20 pb-20 pt-40 bg-grisfooter rounded-3xl ;">
+
             <h1>Midjourney</h1>
             <p> Conçu par Open AI  </p>                
             <li><Like /></li>
             <li><Save /></li>
-        </div>
 
-        <div class="pb-10 pt-20 bg-grisfooter rounded-3xl ;">
             <h3>Fonctionnalités : </h3>
-            <ul>
                 <li>IA générative</li>
                 <li> IA artistique</li>
                 <li> utilisation via discord</li>
-            </ul>
-
+                
             <h2>Pourquoi utiliser Midjourney ?</h2>
             <p>
                 Vous avez des difficultés en dessin ou juste pour représenter vos idées ? Alors la solution est simple ! Midjourney vous aidera, à partir d’une simple description de ce que vous souhaitez l’IA peut générer 4 images de styles différents et vous avez juste choisir votre préférée pour l’améliorer. 
