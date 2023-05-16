@@ -17,3 +17,9 @@
     }
     /*faire une class pour les p txt blanc > mais mettre tout le site en fond noir avant*/
   }
+
+  @layout components{
+    .menu-link {
+      @apply block px-5 py-4;
+    }
+  }

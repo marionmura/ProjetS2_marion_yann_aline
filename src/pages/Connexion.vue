@@ -26,14 +26,9 @@ export default {
 </script> -->
 
 <template  >
-  <div class="bg-grisbg text-white">
+  <div class="pt-20 bg-grisbg text-white">
     <h1 class="ml-[2rem] mr-[2rem] p-4 text-center text-violet border-2 rounded-lg">Connexion</h1>
-    <div class="flex flex-col">
-        <p>navigation temporaire</p>
-        <RouterLink class="bg-violet text-noirbackground font-bold" to="/Home">Home</RouterLink>
-        <RouterLink class="bg-violet text-noirbackground font-bold" to="/aPropos">A Propos</RouterLink>
-    </div>
-    
+        
     <div class="mt-5  pb-10 flex flex-col mr-[2rem] ml-[2rem] text-white">
       <label class="text-violet" width="50px">Email (*)</label>
       <p></p>
