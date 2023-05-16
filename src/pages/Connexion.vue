@@ -43,7 +43,7 @@ export default {
       <input  type="password" id="passwd" placeholder="écrire ici" class="bg-grisbg border-2 rounded-md text-violet p-2 ml-0 m-1 focus:outline-none focus:ring-2 focus:ring-rouge focus:border-0" >
       <p></p>
       
-      <p class="text-violet " v-on:click="reset()">J'ai oublié mon mot de passe</p>
+      <p class="text-violet border-b-2 w-[200px]" v-on:click="reset()">J'ai oublié mon mot de passe</p>
 
       <div class="flex flex-row justify-end mt-5">
         <button class="p-1  m-1 pl-3 pr-3 rounded-full bg-grisfooter text-white" v-on:click="register()">s'inscrire</button>
