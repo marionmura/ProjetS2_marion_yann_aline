@@ -25,7 +25,7 @@ import Twitter from '../components/icons/Twitter.vue'
 
   <h1 class="text-center lg:text-white">Et de l'équipe...</h1>
 
-  <div class="flex flex-row align-center justify-center mt-10 mx-5 pb-3 border-solid border-2 border-violet rounded-3xl">
+  <div class="flex flex-row align-center justify-center mt-10 mx-5 pb-3 border-solid border-2 border-violet rounded-3xl md:mx-52 lg:mx-80">
     <AvatarMarion />
     <div class="text-white text-sm mx-3 mt-6">
       <p>Marion MURA</p>
@@ -34,7 +34,7 @@ import Twitter from '../components/icons/Twitter.vue'
     </div>
   </div>
 
-  <div class="flex flex-row align-center justify-center mt-10 mx-5 pb-3 border-solid border-2 border-violet rounded-3xl">
+  <div class="flex flex-row align-center justify-center mt-10 mx-5 pb-3 border-solid border-2 border-violet rounded-3xl md:mx-52 lg:mx-80">
     <AvatarMarion />
     <div class="text-white text-sm mx-3 mt-6">
       <p>Yann PERNETTE</p>
@@ -43,7 +43,7 @@ import Twitter from '../components/icons/Twitter.vue'
     </div>
   </div>
 
-  <div class="flex flex-row align-center justify-center mt-10 mx-5 pb-3 border-solid border-2 border-violet rounded-3xl">
+  <div class="flex flex-row align-center justify-center mt-10 mx-5 pb-3 border-solid border-2 border-violet rounded-3xl md:mx-52 lg:mx-80">
     <AvatarMarion />
     <div class="text-white text-sm mx-3 mt-6">
       <p>Aline ROSE</p>
