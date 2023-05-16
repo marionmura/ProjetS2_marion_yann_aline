@@ -1,3 +1,9 @@
+<script setup lang="ts">
+import AvatarMarion from '../components/icons/AvatarMarion.vue';
+</script>
+
+
+
 <template>
 <main class="bg-grisbg">
 
@@ -12,6 +18,33 @@
   </div>
 
   <h1>Et de l'équipe...</h1>
+
+  <div>
+    <AvatarMarion />
+    <div class="text-white">
+      <p>Marion MURA</p>
+      <p>étudiante en 1ère année de MMI</p>
+      <a href="mailto:marion.mura@edu.univ-fcomte.fr">marion.mura@edu.univ-fcomte.fr</a>
+    </div>
+  </div>
+
+  <div>
+    <AvatarMarion />
+    <div class="text-white">
+      <p>Marion MURA</p>
+      <p>étudiante en 1ère année de MMI</p>
+      <a href="mailto:marion.mura@edu.univ-fcomte.fr">marion.mura@edu.univ-fcomte.fr</a>
+    </div>
+  </div>
+
+  <div>
+    <AvatarMarion />
+    <div class="text-white">
+      <p>Marion MURA</p>
+      <p>étudiante en 1ère année de MMI</p>
+      <a href="mailto:marion.mura@edu.univ-fcomte.fr">marion.mura@edu.univ-fcomte.fr</a>
+    </div>
+  </div>
 
 </main>
 </template>
