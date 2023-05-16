@@ -35,7 +35,7 @@ import Twitter from '../components/icons/Twitter.vue'
   </div>
 
   <div class="flex flex-row align-center justify-center mt-10 mx-5 pb-3 border-solid border-2 border-violet rounded-3xl md:mx-52 lg:mx-80">
-    <AvatarMarion />
+    <AvatarYann />
     <div class="text-white text-sm mx-3 mt-6">
       <p>Yann PERNETTE</p>
       <p>étudiant en 1ère année de MMI</p>
@@ -44,7 +44,7 @@ import Twitter from '../components/icons/Twitter.vue'
   </div>
 
   <div class="flex flex-row align-center justify-center mt-10 mx-5 pb-3 border-solid border-2 border-violet rounded-3xl md:mx-52 lg:mx-80">
-    <AvatarMarion />
+    <AvatarAline />
     <div class="text-white text-sm mx-3 mt-6">
       <p>Aline ROSE</p>
       <p>étudiante en 1ère année de MMI</p>
