@@ -6,7 +6,7 @@ import Usericon from './icons/Usericon.vue';
 </script>
 
 <template > 
-    <header class=" bg-noirbackground text-violet flex items-center h-20 max-w-full">
+    <header class=" bg-noirbackground text-violet h-20 ">
         <a href="/">
             <Usericon/>
         </a>

@@ -1,4 +1,4 @@
-<script>
+<!-- <script>
 import pocketbase from 'pocketbase';
 const pb = new pocketbase('http://127.0.0.1:8090');
 
@@ -23,63 +23,28 @@ export default {
   }
 }
 
-</script>
+</script> -->
 
-<template >
-    <h1 class="bg-grisbg">Connexion</h1>
+<template  >
+  <div class="bg-grisbg text-white">
+    <h1 class="ml-4 mr-4 p-4 text-center text-violet border-2 rounded-lg">Connexion</h1>
     <div class="flex flex-col">
-        <RouterLink to="/Home">Home</RouterLink>
-        <RouterLink to="/aPropos">A Propos</RouterLink>
+        <p>navigation temporaire</p>
+        <RouterLink class="bg-violet text-noirbackground font-bold" to="/Home">Home</RouterLink>
+        <RouterLink class="bg-violet text-noirbackground font-bold" to="/aPropos">A Propos</RouterLink>
     </div>
     
-    <div>
-      <label width="50px">Login    : </label><input type="email" id="login">
+    <div class="mt-5 text-white">
+      <label class="text-violet" width="50px">Email </label><input type="email" id="login" placeholder="écrire ici" class="bg-grisbg border-2 rounded-md text-violet p-2 m-1 ">
       <p></p>
-      <label width="50px">Password : </label><input type="password" id="passwd">
+      <label class="text-violet" width="50px">Mot de passe  </label><input  type="password" id="passwd" placeholder="écrire ici" class="bg-grisbg border-2 rounded-md text-violet p-2 m-1" >
       <p></p>
-      <label width="50px">Titre : </label><input type="txt" id="titre">
-      <p></p>
-      <hr>
-      <button v-on:click="register()">Register</button>
-      <button v-on:click="login()">Login</button><p></p>
-      <button v-on:click="reset()">Reset</button><p></p>
+      
+      
+      <button class="p-1 m-1 pl-3 pr-3 rounded-full bg-grisfooter text-white" v-on:click="register()">s'inscrire</button>
+      <button class="p-1 pl-3 pr-3  m-1 text-noirbackground font-bold rounded-full bg-white" v-on:click="login()">connexion</button>
+      <p class="text-violet " v-on:click="reset()">J'ai oublié mon mot de passe</p>
+    </div>
+
     </div>
 </template>
-
-
-<style scoped>
-
-label {
-  width:100px;
-  display: inline-block;
-}
-button {
-  width:150px;
-}
-header {
-  line-height: 1.5;
-}
-
-.logo {
-  display: block;
-  margin: 0 auto 2rem;
-}
-
-@media (min-width: 1024px) {
-  header {
-    display: flex;
-    place-items: center;
-    padding-right: calc(var(--section-gap) / 2);
-  }
-
-  .logo {
-    margin: 0 2rem 0 0;
-  }
-
-  header .wrapper {
-    display: flex;
-    place-items: flex-start;
-    flex-wrap: wrap;
-  }
-}
-</style>
