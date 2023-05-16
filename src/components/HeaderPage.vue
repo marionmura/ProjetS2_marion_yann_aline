@@ -8,19 +8,19 @@ import {RouterLink} from 'vue-router'
 </script>
 
 <template > 
-    <header class=" bg-noirbackground text-violet h-20 fixed z-10 flex w-full translate-y-0 items-stretch justify-between">
-        <div class="flex items-center justify-between px-2 ">
-            <RouterLink class="justify-self-start" to="/index"><IAmateurlogo/></RouterLink>
+    <header class="p-4 bg-noirbackground text-violet h-20 fixed z-10 w-full ">
+        <div class="flex justify-between items-center px-2 ">
+            <RouterLink class="" to="/index"><IAmateurlogo/></RouterLink>
             
-            <div class="flex items-center justify-self-end lg:hidden">
-            <RouterLink to="/Connexion"><Usericon/></RouterLink>
+            <div class="flex items-center gap-4 lg:hidden">
+                <RouterLink to="/Connexion"><Usericon/></RouterLink>
         
-            <button class="relative z-10 h-4 w-6 flex flex-col justify-between lg:hidden"  
-            @pointerdown="menuIsOpen = !menuIsOpen" >
-                <span class="block h-[2px] w-full bg-violet transition duration-300" :class="{'translate-y-[8px] translate-x-[2px] rotate-45':menuIsOpen}"></span>
-                <span class="block h-[2px] w-full bg-violet transition duration-300" :class="{'translate-y-[0px] -rotate-45':menuIsOpen}"></span>
-                <span class="block h-[2px] w-full bg-violet transition duration-300" :class="{'translate-y-[-7px] -rotate-45':menuIsOpen}"></span>
-            </button>
+                <button class="relative z-10 h-4 w-6 flex flex-col justify-between lg:hidden"  
+                @pointerdown="menuIsOpen = !menuIsOpen" >
+                    <span class="block h-[2px] w-full bg-violet transition duration-300" :class="{'translate-y-[8px] translate-x-[2px] rotate-45':menuIsOpen}"></span>
+                    <span class="block h-[2px] w-full bg-violet transition duration-300" :class="{'translate-y-[0px] -rotate-45':menuIsOpen}"></span>
+                    <span class="block h-[2px] w-full bg-violet transition duration-300" :class="{'translate-y-[-7px] -rotate-45':menuIsOpen}"></span>
+                </button>
             </div>
 
         </div>
