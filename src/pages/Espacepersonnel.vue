@@ -3,6 +3,7 @@ import AvatarMarion from '@/components/icons/AvatarMarion.vue';
 import Toolicon from '@/components/icons/Toolicon.vue';
 import Binicon from '@/components/icons/Binicon.vue';
 import Googleicon from '@/components/icons/Googleicon.vue';
+import Saveicon from '@/components/icons/Saveicon.vue';
 </script>
 
 <template>
@@ -35,8 +36,8 @@ import Googleicon from '@/components/icons/Googleicon.vue';
 
         <div class="mx-[2rem] my-5 text-violet ">
             <h3>Préférence de langue</h3>
-            <p>français</p>
-            
+            <p >français</p>
+
             <div class="flex flex-row items-center gap-2">
                 <Toolicon class="h-[20px] w-auto"/>
                 <p>modifier</p>
@@ -49,11 +50,18 @@ import Googleicon from '@/components/icons/Googleicon.vue';
             <p>gratuit</p>
         </div>
 
-        <div class="flex justify-end items-center">
+        <div class="flex justify-end items-center pb-5">
             <RouterLink to="/"><button class="rounded-full bg-violet text-noirbackground font-bold p-1 px-2">premium</button>
             </RouterLink>
             <RouterLink to="/Connexion"><button class="p-1  m-1 pl-3 pr-3 rounded-full bg-grisfooter text-white">déconnexion</button></RouterLink>
         </div>
+
+        <div class="text-violet flex flex-row items-center justify-center gap-2 pl-5">
+            <Saveicon class="fill-violet"/>
+            <p class="font-bold text-center">À propos de vous</p>
+        </div>
+        
+        <span class="block h-[1px] w-full bg-violet"></span>
     </main>
 
     
