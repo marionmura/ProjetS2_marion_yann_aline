@@ -1,9 +1,14 @@
+<script setup lang="ts">
+import Googleicon from '../components/icons/Googleicon.vue'
+</script>
+
 <template>
     <div class="pt-20 bg-grisbg text-white">
     <h1 class="ml-[2rem] mr-[2rem] p-4 text-center text-violet border-2 rounded-lg">Inscription</h1>
     
-    <div>
-        Inscription avec un compte Google
+    <div class="my-8 ml-[2rem] mr-[2rem] flex flex-row gap-2 p-4 bg-white rounded-lg justify-center items-center">
+        <Googleicon/>
+        <p class="text-noirbackground">Inscription avec un compte Google</p>
     </div>
 
     <form>
