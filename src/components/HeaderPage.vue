@@ -41,8 +41,14 @@ import {RouterLink} from 'vue-router'
                 
         </nav>
         <div class="invisible h-[0] w-[0] lg:visible lg:h-[20px] lg:w-[10px] flex items-center">
-                <button class="flex-1 m-2 p-2 bg-white rounded-lg text-noirbackground font-bold ">Connexion</button>
-                <button class="flex-1 m-2 p-2 bg-violet text-noirbackground font-bold rounded-lg">S'inscrire</button>
+            <RouterLink to="/Connexion">
+                <button class="flex-1 m-2 p-2 bg-white rounded-lg text-noirbackground font-bold ">Connexion</button> 
+            </RouterLink>
+                
+            <RouterLink to="/Inscription">
+                    <button class="flex-1 m-2 p-2 bg-violet text-noirbackground font-bold rounded-lg">S'inscrire</button>
+                </RouterLink>
+                
             </div>
     </header>
 </template>
