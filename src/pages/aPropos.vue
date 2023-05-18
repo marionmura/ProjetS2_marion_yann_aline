@@ -11,7 +11,7 @@ import Twitter from '../components/icons/Twitter.vue'
 
 
 <template>
-<main class="bg-grisbg">
+<main class="bg-grisbg pt-20">
 
   <h1 class="text-center lg:text-white">À Propos du site</h1>
 
@@ -52,7 +52,7 @@ import Twitter from '../components/icons/Twitter.vue'
     </div>
   </div>
 
-  <div class="flex flex-col my-16 align-center items-center">
+  <div class="flex flex-col mt-16 pb-20 align-center items-center">
     <h4 class="font-bold text-violet mb-3">Retrouvez IAmateur sur les réseaux</h4>
     <ul class="flex flex-row gap-4">
       <li><Tiktok /></li>
