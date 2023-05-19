@@ -62,6 +62,11 @@ import Saveicon from '@/components/icons/Saveicon.vue';
         </div>
         
         <span class="block h-[1px] w-full bg-violet"></span>
+
+        <img class=" w-[345px]" src="../img/previewfavarticle.webp" alt="preview articles favoris"/>
+        
+        <img class=" w-[345px]" src="../img/previewarticlesave.webp" alt="preview articles enregistrés"/>
+
     </main>
 
     
