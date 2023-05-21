@@ -1,13 +1,13 @@
-<!-- <script setup lang="ts">
-  import pocketbase from 'pocketbase';
-  const pb = new pocketbase('http://127.0.0.1:8090');
+ <script setup lang="ts">
+//   import pocketbase from 'pocketbase';
+//   const pb = new pocketbase('http://127.0.0.1:8090');
 
-  const authData = await pb.collection('users').authWithPassword(
-    'EMAIL',
-    'PASSWORD',
-);
+//   const authData = await pb.collection('users').authWithPassword(
+//     'EMAIL',
+//     'PASSWORD',
+// )
  
-</script> -->
+</script> 
 
 
 <template>
