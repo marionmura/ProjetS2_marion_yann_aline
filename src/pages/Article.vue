@@ -13,12 +13,18 @@ import Ampouleicon from '../components/icons/Ampouleicon.vue';
             <RouterLink to="/aPropos">A Propos</RouterLink>
         </div>
 
-    <div class="px-20 pb-20 pt-40 bg-grisfooter rounded-3xl ;">
-
-            <h1>Midjourney</h1>
-            <p> Conçu par Open AI  </p>                
-            <li><Like /></li>
-            <li><Save /></li>
+    <div class="px-20 pb-20 bg-grisfooter rounded-3xl ;">
+    
+            <img class="w-full translate-y-[-50%]" src="../img/robot_2.webp" alt="Image principale de l'article">
+        
+        <div >
+                <div class="flex flex-wrap">
+                    <h1 class="w-3/4">Midjourney</h1>
+                        <a class="mx-[0.2rem] my-2" href="/"><Like /></a>
+                        <a class="mx-[0.2rem] my-2" href="/"><Save /></a>
+                    </div>  
+                <p> Conçu par Open AI  </p>      
+        </div>
 
             <h3>Fonctionnalités : </h3>
                 <li>IA générative</li>
@@ -37,8 +43,8 @@ import Ampouleicon from '../components/icons/Ampouleicon.vue';
                 l’offre gratuite est limitée à 25 lots d’images        
             </p>
 
-            <icon><Ampouleicon /></icon>
-            <h2>Comment utiliser Midjourney - tuto aide</h2>
+                <icon><Ampouleicon /></icon>
+                <h2>Comment utiliser Midjourney - tuto aide</h2>
             <p>
                 Il faut au préalable avoir un compte discord
                 allez sur le site de Midjourney
