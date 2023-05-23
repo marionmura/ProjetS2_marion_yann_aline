@@ -3,6 +3,8 @@ import Tiktok from './icons/Tiktok.vue';
 import Instagram from './icons/Instagram.vue';
 import Facebook from './icons/Facebook.vue';
 import Twitter from './icons/Twitter.vue';
+
+import {RouterLink} from 'vue-router'
 </script>
 
 <template>
@@ -34,7 +36,7 @@ import Twitter from './icons/Twitter.vue';
                 <h4>Contact</h4>
                 <ul class="ml-4"> 
                     <li class="text-white"><a href="#">Contactez-nous</a></li>
-                    <li class="text-white"><a href="#">Qui sommes-nous ?</a></li>
+                    <li class="text-white"><RouterLink to="/aPropos">Qui sommes-nous ?</RouterLink></li>
                 </ul>
 
                 <span class="block h-[1px] w-[250px] bg-white lg:invisible lg:h-[0px] lg:w-[0px]"></span>
