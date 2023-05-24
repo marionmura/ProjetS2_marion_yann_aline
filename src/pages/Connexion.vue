@@ -11,7 +11,7 @@
 
 
 <template>
-  <main class="pt-20 bg-grisbg text-white">
+  <main class="bg-grisbg text-white">
     <h1 class="ml-[2rem] mr-[2rem] p-4 text-center text-violet border-2 rounded-lg">Connexion</h1>
     
     <form>
