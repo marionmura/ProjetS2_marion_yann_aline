@@ -5,45 +5,42 @@ import Ampouleicon from '../components/icons/Ampouleicon.vue';
 </script>
 
 <template>
-    <body class=" bg-noirbackground text-white max-w-full">
-       
-        <h1 class="bg-grisbg">Connexion</h1>
-        <div class="flex flex-col">
-            <RouterLink to="/Home">Home</RouterLink>
-            <RouterLink to="/aPropos">A Propos</RouterLink>
-        </div>
-
-    <div class="px-20 pb-20 bg-grisfooter rounded-3xl ;">
+    <main class="pt-20 bg-grisbg text-white  ">
     
-            <img class="w-full translate-y-[-50%]" src="../img/robot_2.webp" alt="Image principale de l'article">
+    <div class="bg-grisfooter rounded-3xl mt-32">
+    
+            <img class="relative -top-10 h-32 object-cover w-full px-3 " src="../img/robot_2.webp" alt="Image principale de l'article">
         
-                <div class="flex flex-wrap">
-                    <h1 class="w-3/4">Midjourney</h1>
-                        <a class="mx-[0.2rem] my-2" href="/"><Like /></a>
-                        <a class="mx-[0.2rem] my-2" href="/"><Save /></a>
-                    </div>  
-                <p> Conçu par Open AI  </p>      
-        </div>
-
-            <h3>Fonctionnalités : </h3>
+            <div class="px-10 pb-20 pt-40 -mt-40">
+                
+                <div class="grid grid-cols-6 gap-4 ">
+                    <h1 class="col-start-1 col-span-1">Midjourney</h1>
+                    <div class="col-end-11 col-span-1"><Save /></div>
+                    <div class="col-end-12 col-span-1"><Like /></div>
+                </div>
+              <p class=" mt-6 text-violet"> Conçu par Open AI  </p>     
+              
+            <h3 class=" mt-8">Fonctionnalités : </h3>
                 <li>IA générative</li>
                 <li> IA artistique</li>
                 <li> utilisation via discord</li>
                 
-            <h2>Pourquoi utiliser Midjourney ?</h2>
+            <h2 class=" mt-8">Pourquoi utiliser Midjourney ?</h2>
             <p>
                 Vous avez des difficultés en dessin ou juste pour représenter vos idées ? Alors la solution est simple ! Midjourney vous aidera, à partir d’une simple description de ce que vous souhaitez l’IA peut générer 4 images de styles différents et vous avez juste choisir votre préférée pour l’améliorer. 
             </p>
 
-            <h2>Version Midjourney premium disponible</h2>
+            <h2 class=" mt-8">Version Midjourney premium disponible</h2>
             <p>
                 fonctionnalités bonus :
                 permet de générer de façon illimitée
                 l’offre gratuite est limitée à 25 lots d’images        
             </p>
 
-                <icon><Ampouleicon /></icon>
-                <h2>Comment utiliser Midjourney - tuto aide</h2>
+                <div class="flex flex-row gap-4 mt-8">
+                    <icon><Ampouleicon /></icon>
+                    <h2>Comment utiliser Midjourney - tuto aide</h2>
+              </div>
             <p>
                 Il faut au préalable avoir un compte discord
                 allez sur le site de Midjourney
@@ -69,9 +66,12 @@ import Ampouleicon from '../components/icons/Ampouleicon.vue';
                 Retrouvez tout le mode d’emploi sur le site de Midjourney.
             </p>
         </div>
+    </div>
+
         <div>
-            <h2>Articles qui pourraient vous intéresser</h2>
-            
+            <h2 class="text-violet mt-8 text-center">Articles qui pourraient vous intéresser</h2>
+            <hr class="text-violet pb-8 text-center">
         </div>
-    </body>
+        
+    </main>
 </template>
