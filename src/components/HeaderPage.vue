@@ -8,8 +8,8 @@ import {RouterLink} from 'vue-router'
 </script>
 
 <template > 
-    <header class="p-4 bg-noirbackground text-violet h-20 fixed z-10 w-full ">
-        <div class="flex justify-between items-center px-2 ">
+    <header class="p-4 bg-noirbackground text-violet h-20 fixed z-10 w-full justify-between ">
+        <div class="flex justify-between items-center px-2 lg:grid lg:grid-cols-3">
             <RouterLink class="" to="/index"><IAmateurlogo/></RouterLink>
             
             <div class="flex items-center gap-4 lg:hidden">
@@ -23,8 +23,18 @@ import {RouterLink} from 'vue-router'
                 </button>
             </div>
 
+            <div class="invisible h-[0] w-[0] lg:visible lg:h-[20px] lg:w-[10px] lg:flex lg:flex-row-reverse  lg:justify-end items-center">
+                <RouterLink to="/Connexion">
+                    <button class="flex-1 m-2 p-2 bg-white rounded-lg text-noirbackground font-bold ">Connexion</button> 
+                </RouterLink>
+                    
+                <RouterLink to="/Inscription">
+                        <button class="flex-1 m-2 p-2 bg-violet text-noirbackground font-bold rounded-lg">S'inscrire</button>
+                    </RouterLink>
+                    
+            </div>
         </div>
-        <nav class="invisible opacity-0  lg:invisible fixed inset-0 h-screen w-screen bg-noirbackground"  :class="{'!visible !opacity-100':menuIsOpen}">
+        <nav class="invisible opacity-0  lg:invisible lg:relative fixed inset-0 h-screen w-screen bg-noirbackground"  :class="{'!visible !opacity-100':menuIsOpen}">
             <ul class="mt-[80px] ml-[30px] space-x-10 flex flex-col gap-4 ">
                 <li><RouterLink class="active" to="/Espacepersonnel" >Espace personnel</RouterLink></li>
                 <li><RouterLink class="menu-link" to="/Mesfavoris">Mes favoris</RouterLink></li>
@@ -40,15 +50,6 @@ import {RouterLink} from 'vue-router'
             </ul>
                 
         </nav>
-        <div class="invisible h-[0] w-[0] lg:visible lg:h-[20px] lg:w-[10px] flex items-center">
-            <RouterLink to="/Connexion">
-                <button class="flex-1 m-2 p-2 bg-white rounded-lg text-noirbackground font-bold ">Connexion</button> 
-            </RouterLink>
-                
-            <RouterLink to="/Inscription">
-                    <button class="flex-1 m-2 p-2 bg-violet text-noirbackground font-bold rounded-lg">S'inscrire</button>
-                </RouterLink>
-                
-            </div>
+        
     </header>
 </template>
