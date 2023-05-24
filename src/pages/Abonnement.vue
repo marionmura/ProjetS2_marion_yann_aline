@@ -1,0 +1,3 @@
+<template>
+    page abonnement
+</template>
