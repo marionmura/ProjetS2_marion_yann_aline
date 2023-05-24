@@ -5,21 +5,22 @@ import Ampouleicon from '../components/icons/Ampouleicon.vue';
 </script>
 
 <template>
-    <main class="pt-20 bg-grisbg text-white  ">
-    
-    <div class="bg-grisfooter rounded-3xl mt-32">
-    
-            <img class="relative -top-10 h-32 object-cover w-full px-3 " src="../img/robot_2.webp" alt="Image principale de l'article">
+
+    <main class="pt-20 bg-grisbg text-white lg:grid lg:grid-cols-3 lg:px-20 lg:gap-4">
+    <div class="bg-grisfooter rounded-3xl mt-32 lg:col-span-2 ">
+        <div class="px-10 pb-20 pt-40  ">
+
+        <div class="-mt-40 lg:grid lg:grid-cols-3  lg:gap-4">
+            <img class="relative -top-10 h-32 object-cover w-full rounded-3xl lg:object-cover lg:w-80 lg:h-60 " src="../img/robot_2.webp" alt="Image principale de l'article">
         
-            <div class="px-10 pb-20 pt-40 -mt-40">
-                
-                <div class="grid grid-cols-6 gap-4 ">
+            <div class="grid grid-cols-6 gap-4">
                     <h1 class="col-start-1 col-span-1">Midjourney</h1>
                     <div class="col-end-11 col-span-1"><Save /></div>
                     <div class="col-end-12 col-span-1"><Like /></div>
-                </div>
+            </div>
               <p class=" mt-6 text-violet"> Conçu par Open AI  </p>     
-              
+        </div>  
+            
             <h3 class=" mt-8">Fonctionnalités : </h3>
                 <li>IA générative</li>
                 <li> IA artistique</li>
@@ -68,7 +69,7 @@ import Ampouleicon from '../components/icons/Ampouleicon.vue';
         </div>
     </div>
 
-        <div>
+        <div class="space-y-2 mb-5 lg:pb-30">
             <h2 class="text-violet mt-8 text-center">Articles qui pourraient vous intéresser</h2>
             <hr class="text-violet pb-8 text-center">
         </div>
