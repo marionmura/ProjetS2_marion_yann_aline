@@ -1,7 +1,9 @@
 <script setup lang="ts">
-  import { Collections } from '../pocketbase-types'
-  import TemplateArticle from '@/components/TemplateArticle.vue'
-  import type { ArticlesRecord } from '../pocketbase-types'
+  import type { ArticlesResponse } from '@/pocketbase-types'
+  // import TemplateArticle from '@/components/TemplateArticle.vue'
+  import { allArticles } from '@/backend';
+  
+  const listeArticles = await allArticles()
 </script>
 
 <template>
@@ -9,5 +11,5 @@
     <RouterLink to="/aPropos">À Propos</RouterLink>
     <RouterLink to="/Connexion">Connexion</RouterLink>
 
-    <TemplateArticle v-for="uneMaison in maisonsListe" :v-key="uneMaison.id" v-bind="{ ...uneMaison }" />
+    <!-- <TemplateArticle v-for="article of listeArticles" :v-key="article.id" v-bind="{ ...article }" /> -->
   </template>
