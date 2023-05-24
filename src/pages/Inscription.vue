@@ -51,7 +51,7 @@ import Googleicon from '../components/icons/Googleicon.vue'
             </RouterLink>
         </div>
 
-        <!-- <RouterLink to="/Espacepersonnel"><button class="p-1 pl-3 pr-3  m-1 text-noirbackground font-bold rounded-full bg-white" v-on:click="login()">inscription</button></RouterLink> -->
+        <RouterLink to="/Espacepersonnel"><button class="p-1 pl-3 pr-3  m-1 text-noirbackground font-bold rounded-full bg-white" v-on:click="login()">inscription</button></RouterLink>
       </div>
 
     </main>
