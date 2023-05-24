@@ -17,7 +17,6 @@ import Ampouleicon from '../components/icons/Ampouleicon.vue';
     
             <img class="w-full translate-y-[-50%]" src="../img/robot_2.webp" alt="Image principale de l'article">
         
-        <div >
                 <div class="flex flex-wrap">
                     <h1 class="w-3/4">Midjourney</h1>
                         <a class="mx-[0.2rem] my-2" href="/"><Like /></a>
