@@ -9,7 +9,7 @@ import {RouterLink} from 'vue-router'
 
 <template >
     <header class="p-4 bg-noirbackground text-violet h-20 relative fixed z-10 w-full">
-        <div class="flex justify-between items-center px-2 ">
+        <div class="flex justify-between items-center px-2 lg:grid lg:grid-cols-2">
             <RouterLink class="" to="/index"><IAmateurlogo/></RouterLink>
 
             <div class="flex  items-center gap-4 lg:hidden">
