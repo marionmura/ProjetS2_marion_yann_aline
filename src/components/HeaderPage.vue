@@ -8,7 +8,7 @@ import {RouterLink} from 'vue-router'
 </script>
 
 <template >
-    <header class="p-4 bg-noirbackground text-violet h-20 relative fixed z-10 w-full mb-5">
+    <header class="p-4 bg-noirbackground text-violet h-20 relative fixed z-10 w-full">
         <div class="flex justify-between items-center px-2 ">
             <RouterLink class="" to="/index"><IAmateurlogo/></RouterLink>
 
