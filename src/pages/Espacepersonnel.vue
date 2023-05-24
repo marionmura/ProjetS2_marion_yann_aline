@@ -7,7 +7,7 @@ import Saveicon from '@/components/icons/Saveicon.vue';
 </script>
 
 <template>
-    <main class="pt-20 bg-grisbg text-white ">
+    <main class="bg-grisbg text-white ">
         <div class="bg-noirbackground text-violet flex flex-row items-center justify-center gap-2 pl-5">
             <Toolicon/>
             <p class="font-bold text-center">À propos de vous</p>
