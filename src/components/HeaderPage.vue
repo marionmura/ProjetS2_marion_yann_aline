@@ -9,10 +9,10 @@ import {RouterLink} from 'vue-router'
 
 <template > 
     <header class="p-4 bg-noirbackground text-violet h-20 fixed z-10 w-full justify-between ">
-        <div class="flex justify-between items-center px-2 lg:grid lg:grid-cols-3">
+        <div class="flex justify-between items-center px-2 lg:grid lg:grid-cols-2">
             <RouterLink class="" to="/index"><IAmateurlogo/></RouterLink>
             
-            <div class="flex items-center gap-4 lg:hidden">
+            <div class="flex  items-center gap-4 lg:hidden">
                 <RouterLink to="/Connexion"><Usericon/></RouterLink>
         
                 <button class="relative z-10 h-4 w-6 flex flex-col justify-between lg:hidden"  
@@ -23,7 +23,7 @@ import {RouterLink} from 'vue-router'
                 </button>
             </div>
 
-            <div class="invisible h-[0] w-[0] lg:visible lg:h-[20px] lg:w-[10px] lg:flex lg:flex-row-reverse  lg:justify-end items-center">
+            <div class="invisible h-[0] w-[0] lg:visible lg:h-[20px] lg:w-[10px] lg:flex lg:flex-row-reverse   lg:justify-end items-center">
                 <RouterLink to="/Connexion">
                     <button class="flex-1 m-2 p-2 bg-white rounded-lg text-noirbackground font-bold ">Connexion</button> 
                 </RouterLink>
