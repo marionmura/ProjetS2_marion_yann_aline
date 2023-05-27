@@ -11,7 +11,7 @@
 
 
 <template>
-  <main class="pt-20 bg-grisbg text-white">
+  <main class="bg-grisbg text-white">
     <h1 class="ml-[2rem] mr-[2rem] p-4 text-center text-violet border-2 rounded-lg">Connexion</h1>
     
     <form>
@@ -31,11 +31,11 @@
     
 
       <div class="flex flex-row justify-end mt-5 pb-[10px]">
-        <!-- <RouterLink to="/Inscription"><button class="p-1  m-1 pl-3 pr-3 rounded-full bg-grisfooter text-white" v-on:click="register()">s'inscrire</button> -->
-        <!-- </RouterLink> -->
+        <RouterLink to="/Inscription"><button class="p-1  m-1 pl-3 pr-3 rounded-full bg-grisfooter text-white" v-on:click="register()">s'inscrire</button>
+        </RouterLink>
 
         <RouterLink to="/Espacepersonnel">
-          <!-- <button class="p-1 pl-3 pr-3  m-1 text-noirbackground font-bold rounded-full bg-white" v-on:click="login()">connexion</button> -->
+          <button class="p-1 pl-3 pr-3  m-1 text-noirbackground font-bold rounded-full bg-white" v-on:click="login()">connexion</button>
         </RouterLink>
                 
       </div>

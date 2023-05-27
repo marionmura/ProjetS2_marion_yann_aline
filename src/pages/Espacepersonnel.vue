@@ -7,7 +7,7 @@ import Saveicon from '@/components/icons/Saveicon.vue';
 </script>
 
 <template>
-    <main class="pt-20 bg-grisbg text-white ">
+    <main class="bg-grisbg text-white ">
         <div class="bg-noirbackground text-violet flex flex-row items-center justify-center gap-2 pl-5">
             <Toolicon/>
             <p class="font-bold text-center">À propos de vous</p>
@@ -51,7 +51,7 @@ import Saveicon from '@/components/icons/Saveicon.vue';
         </div>
 
         <div class="flex justify-end items-center pb-5">
-            <RouterLink to="/"><button class="rounded-full bg-violet text-noirbackground font-bold p-1 px-2">premium</button>
+            <RouterLink to="/Abonnement"><button class="rounded-full bg-violet text-noirbackground font-bold p-1 px-2">premium</button>
             </RouterLink>
             <RouterLink to="/Connexion"><button class="p-1  m-1 pl-3 pr-3 rounded-full bg-grisfooter text-white">déconnexion</button></RouterLink>
         </div>

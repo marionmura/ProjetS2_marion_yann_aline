@@ -11,7 +11,7 @@ import Twitter from '../components/icons/Twitter.vue'
 
 
 <template>
-<main class="bg-grisbg pt-20">
+<main class="bg-grisbg ">
 
   <h1 class="text-center lg:text-white">À Propos du site</h1>
 

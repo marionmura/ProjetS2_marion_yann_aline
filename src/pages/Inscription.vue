@@ -3,7 +3,7 @@ import Googleicon from '../components/icons/Googleicon.vue'
 </script>
 
 <template>
-    <main class="pt-20 bg-grisbg text-white">
+    <main class="bg-grisbg text-white">
     <h1 class="ml-[2rem] mr-[2rem] p-4 text-center text-violet border-2 rounded-lg">Inscription</h1>
     
     <div class="my-8 ml-[2rem] mr-[2rem] flex flex-row gap-2 p-4 bg-white rounded-lg justify-center items-center">
@@ -51,7 +51,7 @@ import Googleicon from '../components/icons/Googleicon.vue'
             </RouterLink>
         </div>
 
-        <!-- <RouterLink to="/Espacepersonnel"><button class="p-1 pl-3 pr-3  m-1 text-noirbackground font-bold rounded-full bg-white" v-on:click="login()">inscription</button></RouterLink> -->
+        <RouterLink to="/Espacepersonnel"><button class="p-1 pl-3 pr-3  m-1 text-noirbackground font-bold rounded-full bg-white" v-on:click="login()">inscription</button></RouterLink>
       </div>
 
     </main>

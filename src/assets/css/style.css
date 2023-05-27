@@ -10,7 +10,7 @@
       @apply font-cabin text-xl text-violet;
     }
     h4{
-      @apply font-dosis font-medium text-base text-white;
+      @apply font-dosis font-bold text-base text-white;
     }
     p{
       @apply font-jost;
@@ -23,3 +23,9 @@
       @apply block px-5 py-4;
     }
   }
+
+  @layer utilities {
+    .activecheckbox {
+      @apply  text-vert font-bold;
+    }
+}
