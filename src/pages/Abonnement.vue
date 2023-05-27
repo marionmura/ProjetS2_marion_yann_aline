@@ -49,12 +49,16 @@ import Usericon from '../components/icons/Usericon.vue'
             <p class="mb-5"></p>
         
             <div class="grid grid-cols-2">
-                <label class="text-violet" width="50px">Date d'expiration</label>
-                <input  type="date" id="date" placeholder="MM/AA" required class="bg-grisbg border-2 rounded-md text-violet p-2 ml-0 m-1 focus:outline-none focus:ring-2 focus:ring-vert focus:border-0" >
+                <div>
+                    <label class="text-violet" width="50px">Date d'expiration</label>
+                <input  type="date" id="date" placeholder="MM/AA" required class="bg-grisbg border-2 rounded-md text-violet p-2 ml-0 m-1 focus:outline-none focus:ring-2 focus:ring-vert focus:border-0"  w-full >
+                </div>
                 
-            
-                <label class="text-violet" width="50px">Code de sécurité</label>
-                <input  type="texte" id="code" placeholder="000" required class="bg-grisbg border-2 rounded-md text-violet p-2 ml-0 m-1 focus:outline-none focus:ring-2 focus:ring-vert focus:border-0 " >
+                <div>
+                    <label class="text-violet" width="50px">Code de sécurité</label>
+                <input  type="texte" id="code" placeholder="000" required class="bg-grisbg border-2 rounded-md text-violet p-2 ml-0 my-1 focus:outline-none focus:ring-2 focus:ring-vert focus:border-0 w-full" >
+                </div>
+                
                 
             </div>
             
