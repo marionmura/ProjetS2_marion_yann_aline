@@ -1,3 +1,59 @@
+<script setup lang="ts">
+import Usericon from '../components/icons/Usericon.vue'
+</script>
+
+
 <template>
-    page abonnement
+    <main class="bg-grisbg text-white">
+        <div>
+            <div>
+                <Usericon/>
+                <p>Nom Prénom utilisateur</p>
+            </div>
+            <h2>Souscrire à l'abonnement premium</h2>
+            <ul>
+                <li><p>Seulement 4 € par mois</p></li>
+                <li><p>Annulez à tout moment. Offre soumise à des conditions.</p></li>
+            </ul>
+
+            <div class="text-violet">
+                <p>Début de la facturation</p>
+                <p>Aujourd'hui</p>
+            
+                <p>Prochaine facturation</p>
+                <p>08 Juin 2023</p>
+            </div>
+        </div>
+
+
+        <fieldset>
+            <legend class="text-violet">Moyen de paiement</legend>
+
+            <div class="text-violet">
+                <input type="radio" id="CB" name="paiement" value="CB"
+                        checked>
+                <label for="CB">Carte de crédit ou débit</label>
+            </div>
+
+            <div class="text-violet">
+                <input type="radio" id="paypal" name="paiement" value="paypal">
+                <label for="paypal">Paypal</label>
+            </div>
+        </fieldset>        
+
+        <h3>Information de paiement</h3>
+        <form>
+        <div class="">
+            <label class="text-violet" width="50px">Numéro de carte</label>
+            <p></p>
+            <input type="text" id="cartenb" placeholder="0000 0000 0000 0000" required  class="bg-grisbg border-2 rounded-md text-violet p-2 m-1 ml-0 focus:outline-none focus:ring-2 focus:ring-rouge focus:border-0">
+            <p class="mb-5"></p>
+    
+        <label class="text-violet" width="50px">Date d'expiration</label><p></p>
+        <input  type="date" id="date" placeholder="MM/AA" required class="bg-grisbg border-2 rounded-md text-violet p-2 ml-0 m-1 focus:outline-none focus:ring-2 focus:ring-rouge focus:border-0" >
+        <p></p>
+        
+        </div>
+        </form>
+    </main>
 </template>
