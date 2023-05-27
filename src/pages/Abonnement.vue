@@ -6,8 +6,8 @@ import Usericon from '../components/icons/Usericon.vue'
 <template>
     <main class="bg-grisbg text-white">
         <div>
-            <div>
-                <Usericon/>
+            <div class="flex flex-row justify-around items-center">
+                <Usericon class="h-[40px]"/>
                 <p>Nom Prénom utilisateur</p>
             </div>
             <h2>Souscrire à l'abonnement premium</h2>
@@ -16,7 +16,7 @@ import Usericon from '../components/icons/Usericon.vue'
                 <li><p>Annulez à tout moment. Offre soumise à des conditions.</p></li>
             </ul>
 
-            <div class="text-violet">
+            <div class="text-violet grid grid-cols-2 ">
                 <p>Début de la facturation</p>
                 <p>Aujourd'hui</p>
             
@@ -27,7 +27,7 @@ import Usericon from '../components/icons/Usericon.vue'
 
 
         <fieldset>
-            <legend class="text-violet">Moyen de paiement</legend>
+            <legend class="pt-[20px] text-violet ">Moyen de paiement</legend>
 
             <div class="text-violet">
                 <input type="radio" id="CB" name="paiement" value="CB"
@@ -49,11 +49,19 @@ import Usericon from '../components/icons/Usericon.vue'
             <input type="text" id="cartenb" placeholder="0000 0000 0000 0000" required  class="bg-grisbg border-2 rounded-md text-violet p-2 m-1 ml-0 focus:outline-none focus:ring-2 focus:ring-rouge focus:border-0">
             <p class="mb-5"></p>
     
-        <label class="text-violet" width="50px">Date d'expiration</label><p></p>
-        <input  type="date" id="date" placeholder="MM/AA" required class="bg-grisbg border-2 rounded-md text-violet p-2 ml-0 m-1 focus:outline-none focus:ring-2 focus:ring-rouge focus:border-0" >
-        <p></p>
+            <label class="text-violet" width="50px">Date d'expiration</label><p></p>
+            <input  type="date" id="date" placeholder="MM/AA" required class="bg-grisbg border-2 rounded-md text-violet p-2 ml-0 m-1 focus:outline-none focus:ring-2 focus:ring-rouge focus:border-0" >
+            <p></p>
         
+            <label class="text-violet" width="50px">Code de sécurité</label><p></p>
+            <input  type="texte" id="code" placeholder="000" required class="bg-grisbg border-2 rounded-md text-violet p-2 ml-0 m-1 focus:outline-none focus:ring-2 focus:ring-rouge focus:border-0" >
+            <p></p>
         </div>
+
+        <input  type="checkbox" id="date" required class="" >
+        <label class="text-violet" width="50px">J'accepte les conditions générales de vente d'IAmateur</label><p></p>
         </form>
+
+        <button>souscrire</button>
     </main>
 </template>
