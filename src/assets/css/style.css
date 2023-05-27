@@ -23,3 +23,9 @@
       @apply block px-5 py-4;
     }
   }
+
+  @layer utilities {
+    .activecheckbox {
+      @apply  text-vert font-bold;
+    }
+}
