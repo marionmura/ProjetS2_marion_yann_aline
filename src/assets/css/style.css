@@ -4,13 +4,13 @@
 
 @layer base {
     h1, h2, h3, h4, h5, h6 {
-      @apply font-bold;
+      @apply font-medium;
     }
     h1 {
       @apply font-cabin text-xl text-violet;
     }
     h4{
-      @apply font-dosis font-bold text-base text-white;
+      @apply font-dosis font-medium text-base text-white;
     }
     p{
       @apply font-jost;
