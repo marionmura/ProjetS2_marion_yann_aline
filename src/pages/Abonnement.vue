@@ -4,19 +4,20 @@ import Usericon from '../components/icons/Usericon.vue'
 
 
 <template>
-    <main class="bg-grisbg text-white">
-        <div>
-            <div class="flex flex-row justify-around items-center">
+    <main class="bg-grisbg text-white px-[2rem] ">
+        <div class="border border-violet p-2 rounded-lg
+        ">
+            <div class="flex flex-row justify-around  items-center ">
                 <Usericon class="h-[40px]"/>
-                <p>Nom Prénom utilisateur</p>
+                <h2>Nom Prénom utilisateur</h2>
             </div>
-            <h2>Souscrire à l'abonnement premium</h2>
+            <h2 class="pt-5">Souscrire à l'abonnement premium</h2>
             <ul>
-                <li><p>Seulement 4 € par mois</p></li>
-                <li><p>Annulez à tout moment. Offre soumise à des conditions.</p></li>
+                <li><p>- Seulement 4 € par mois</p></li>
+                <li><p>- Annulez à tout moment. Offre soumise à des conditions.</p></li>
             </ul>
 
-            <div class="text-violet grid grid-cols-2 ">
+            <div class="text-violet grid grid-cols-2 pt-5">
                 <p>Début de la facturation</p>
                 <p>Aujourd'hui</p>
             
@@ -48,15 +49,15 @@ import Usericon from '../components/icons/Usericon.vue'
             <input type="text" id="cartenb" placeholder="0000 0000 0000 0000" required  class="bg-grisbg border-2 rounded-md text-violet p-2 m-1 ml-0 focus:outline-none focus:ring-2 focus:ring-vert focus:border-0">
             <p class="mb-5"></p>
         
-            <div class="grid grid-cols-2">
+            <div class="grid grid-cols-2 gap-8 items-center">
                 <div>
                     <label class="text-violet" width="50px">Date d'expiration</label>
-                <input  type="date" id="date" placeholder="MM/AA" required class="bg-grisbg border-2 rounded-md text-violet p-2 ml-0 m-1 focus:outline-none focus:ring-2 focus:ring-vert focus:border-0"  w-full >
+                 <input  type="date" id="date" placeholder="MM/AA" required class="bg-grisbg border-2 rounded-md text-violet p-2 ml-0 m-1 focus:outline-none focus:ring-2 focus:ring-vert focus:border-0 w-full"  >
                 </div>
                 
                 <div>
                     <label class="text-violet" width="50px">Code de sécurité</label>
-                <input  type="texte" id="code" placeholder="000" required class="bg-grisbg border-2 rounded-md text-violet p-2 ml-0 my-1 focus:outline-none focus:ring-2 focus:ring-vert focus:border-0 w-full" >
+                    <input  type="texte" id="code" placeholder="000" required class="bg-grisbg border-2 rounded-md text-violet p-2 ml-0 my-1 focus:outline-none focus:ring-2 focus:ring-vert focus:border-0 w-full" >
                 </div>
                 
                 
@@ -65,10 +66,12 @@ import Usericon from '../components/icons/Usericon.vue'
         </div>
 
         <input  type="checkbox" id="date" required class="" >
-        <label class="text-violet" width="50px">J'accepte les conditions générales de vente d'IAmateur</label><p></p>
+        <label class="text-white px-2" width="50px">J'accepte les 
+            <RouterLink to="/" class="text-violet">conditions générales de vente</RouterLink> 
+            d'IAmateur</label>
         </form>
 
-        <div class="flex flex-row justify-around">
+        <div class="py-5 flex flex-row justify-around">
             <button class="bg-violet text-grisbg font-bold px-3 py-1 rounded-full ">souscrire</button>
         </div>
         
