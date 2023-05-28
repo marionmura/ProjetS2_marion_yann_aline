@@ -13,6 +13,8 @@ const urlImg = pb.files.getUrl(props, img0, { thumb: '100x200' })
     <div>
       {{ nom }},
       {{ paragraphe }}
-      <img class="" :src="urlImg"/>
+      <img class="w-[285px] h-[131px] object-cover rounded-lg" :src="urlImg"/>
     </div>
 </template>
+
+<!--object cover permet d'avoir une image recadrée mais pas déformée :)-->

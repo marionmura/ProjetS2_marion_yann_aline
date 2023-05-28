@@ -15,6 +15,9 @@
     p{
       @apply font-jost;
     }
+    main{
+      @apply bg-grisbg text-white;
+    }
     /*faire une class pour les p txt blanc > mais mettre tout le site en fond noir avant*/
 
   }
