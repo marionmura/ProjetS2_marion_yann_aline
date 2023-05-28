@@ -8,7 +8,6 @@ import HeaderPage from './components/HeaderPage.vue';
 
     <header>
         <HeaderPage />
-        <RouterLink to="/"><p class="">Test</p></RouterLink>
     </header>
 
     <main>
