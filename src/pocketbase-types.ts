@@ -34,6 +34,7 @@ export type AuthSystemFields<T = never> = {
 export type ArticlesRecord = {
 	nom?: string
 	paragraphe?: string
+	image?: string
 }
 
 export type UsersRecord = {
