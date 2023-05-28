@@ -7,7 +7,7 @@ import Fleche from '../components/icons/Flechehaut.vue';
     <main class="bg-grisbg text-white">
    
         <div class="space-y-2 bg-noirbackground lg:bg-transparent">
-            <h1 class="text-violet pt-10 text-center lg:text-white lg:font-cabin lg:text-left lg:px-12 font-medium">Conditions générales de vente</h1>
+            <h1 class="text-violet pt-10 text-center lg:text-white lg:font-cabin lg:text-left lg:px-12 font-medium text-2xl">Conditions générales de vente</h1>
             <hr class="text-violet lg:relative lg:border-t-2 lg:hidden">
         </div>
         <div class=" pb-20 px-12 ">
