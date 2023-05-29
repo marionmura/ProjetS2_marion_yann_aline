@@ -16,3 +16,8 @@ export async function allArticleSave(){
     const savearticles =await pb.collection('articles').getFullList({filter : 'enregistrement=True'})
     return savearticles;
 }
+
+export async function allcarrousel(){
+    const carrousel =await pb.collection('carrousel').getFullList()
+    return carrousel;
+}

@@ -1,19 +1,17 @@
 <script setup lang="ts">
 import { Collections } from '@/pocketbase-types';
 import type { ArticlesResponse } from '@/pocketbase-types';
-
 import TemplateArticle from '@/components/TemplateArticle.vue';
-
-import { allArticles } from '@/backend';
-  
+import { allArticles, allcarrousel } from '@/backend';
 const listeArticles = await allArticles()
+
+import Carrousel from '@/components/Carrousel.vue';
+const listecarrousel = await allcarrousel()
+
 </script>
 
 <template>
-
-  <br>
-  <br>
-  <br>
+  <Carrousel v-for="carrousel of listecarrousel" v-bind= "{...carrousel}" :v-key="carrousel.id"/>
   <h1 class="font-bold">page accueil avec la liste des articles</h1>
  
    <main>

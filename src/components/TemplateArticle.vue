@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import arrowright from './icons/Arrowright.vue';
-import Likeicon from './icons/Likeicon.vue';
-import Saveicon from './icons/Saveicon.vue';
+// import Likeicon from './icons/Likeicon.vue';
+// import Saveicon from './icons/Saveicon.vue';
 import { pb } from '@/backend' ;
 import type { ArticlesResponse } from '@/pocketbase-types'
 
@@ -27,7 +27,7 @@ const urlImg = pb.files.getUrl(props, img0, { thumb: '100x200' })
               <path d="M13.2201 1.3235C14.2468 1.45149 15 2.4004 15 3.50831V19L8 15.2503L1 19V3.50831C1 2.4004 1.75227 1.45149 2.77987 1.3235C6.24831 0.892168 9.75169 0.892168 13.2201 1.3235Z" stroke="#92A1FF" stroke-linecap="round" stroke-linejoin="round"/>
               </svg>
             </div>
-            
+
             <div class="like">
               <svg width="22" height="20" viewBox="0 0 22 20" fill="none" :class="{'fill-white': favori }" xmlns="http://www.w3.org/2000/svg">
               <path d="M21 5.90909C21 3.19818 18.6678 1 15.7911 1C13.6411 1 11.7944 2.22836 11 3.98145C10.2056 2.22836 8.35889 1 6.20778 1C3.33333 1 1 3.19818 1 5.90909C1 13.7855 11 19 11 19C11 19 21 13.7855 21 5.90909Z" stroke="white" stroke-linecap="round" stroke-linejoin="round"/>

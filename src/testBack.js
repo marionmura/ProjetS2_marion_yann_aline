@@ -1,4 +1,4 @@
-import { allArticles } from "@/backend";
+import { allArticles, allcarrousel } from "@/backend";
 
 try {
     const records = await allArticles() ;
@@ -7,5 +7,9 @@ try {
     console.error(e) ;
 }
 
-const like = document.querySelector('.like');
-      
+try {
+    const carrousel = await allcarrousel() ;
+    console.log(JSON.stringify(carrousel, null, 2)) ;
+    } catch (e) {
+    console.error(e) ;
+}

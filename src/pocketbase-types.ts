@@ -5,7 +5,7 @@
 export enum Collections {
 	Articles = "articles",
 	Users = "users",
-}
+	Carrousel = "carroussel",}
 
 // Alias types for improved usability
 export type IsoDateString = string
@@ -45,18 +45,28 @@ export type UsersRecord = {
 	avatar?: string
 }
 
+export type CarrouselRecord = {
+	titre?: string
+	description?: string
+	image?: string
+}
+
 // Response types include system fields and match responses from the PocketBase API
 export type ArticlesResponse = Required<ArticlesRecord> & BaseSystemFields
 export type UsersResponse = Required<UsersRecord> & AuthSystemFields
+export type CarrouselResponse = Required<CarrouselRecord> & BaseSystemFields
+
 
 // Types containing all Records and Responses, useful for creating typing helper functions
 
 export type CollectionRecords = {
 	articles: ArticlesRecord
 	users: UsersRecord
+	carrousel : CarrouselRecord
 }
 
 export type CollectionResponses = {
 	articles: ArticlesResponse
 	users: UsersResponse
+	carrousel: CarrouselResponse
 }

@@ -14,7 +14,8 @@
   "dependencies": {
     "pocketbase": "^0.14.4",
     "vue": "^3.3.0-beta.5",
-    "vue-router": "^4.2.0"
+    "vue-router": "^4.2.0",
+    "vue-ssr-carousel": "^2.2.0"
   },
   "devDependencies": {
     "@rushstack/eslint-patch": "^1.2.0",
