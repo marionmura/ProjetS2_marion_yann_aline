@@ -7,5 +7,5 @@ try {
     console.error(e) ;
 }
 
-
+const like = document.querySelector('.like');
       

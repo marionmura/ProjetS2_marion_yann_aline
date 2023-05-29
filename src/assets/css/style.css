@@ -36,3 +36,10 @@
       @apply  text-vert font-bold;
     }
 }
+
+.like{
+  cursor: pointer;
+}
+.save{
+  cursor: pointer;
+}
