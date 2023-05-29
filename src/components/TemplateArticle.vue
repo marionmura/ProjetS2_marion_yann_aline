@@ -10,6 +10,8 @@ const props: ArticlesResponse = defineProps<ArticlesResponse>()
 const img0= props.image
 // // si pas d'image (undefined) garde undefined
 const urlImg = pb.files.getUrl(props, img0, { thumb: '100x200' })
+
+
 </script>
 
 <template>
@@ -18,7 +20,7 @@ const urlImg = pb.files.getUrl(props, img0, { thumb: '100x200' })
         <div class="flex flex-row justify-between">
           <h2 class="font-bold pt-2 pl-2">{{ nom }}</h2>
           <div class="flex gap-2 m-2">
-            <Saveicon/>
+            <Saveicon />
             <Likeicon/>
           </div>
           
