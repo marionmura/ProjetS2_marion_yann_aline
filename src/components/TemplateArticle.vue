@@ -1,4 +1,7 @@
 <script setup lang="ts">
+import arrowright from './icons/Arrowright.vue';
+import Likeicon from './icons/Likeicon.vue';
+import Saveicon from './icons/Saveicon.vue';
 import { pb } from '@/backend' ;
 import type { ArticlesResponse } from '@/pocketbase-types'
 
@@ -12,9 +15,21 @@ const urlImg = pb.files.getUrl(props, img0, { thumb: '100x200' })
 <template>
     <div class="relative w-[285px] h-[132px]  rounded-lg">
       <div class="absolute w-[285px] h-[132px] ">
-        <h2 class="font-bold p-1">{{ nom }}</h2>
-        <p class="font-light px-1">{{ paragraphe }} </p>
-        <p class="flex justify-end px-2">en lire plus</p>
+        <div class="flex flex-row justify-between">
+          <h2 class="font-bold pt-2 pl-2">{{ nom }}</h2>
+          <div class="flex gap-2 m-2">
+            <Saveicon/>
+            <Likeicon/>
+          </div>
+          
+        </div>
+        
+        <p class="font-light px-2">{{ paragraphe }} </p>
+        <div class="flex justify-end px-2 items-center gap-2">
+          <p class="font-light">en lire plus</p>
+          <arrowright/>
+        </div>
+        
       </div>
       
       <img class="w-[285px] h-[133px] border-2 border-violet left-[-1px] top-[-1px] object-cover rounded-lg " :src="urlImg"/>
