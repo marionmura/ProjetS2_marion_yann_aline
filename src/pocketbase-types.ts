@@ -35,6 +35,9 @@ export type ArticlesRecord = {
 	nom?: string
 	paragraphe?: string
 	image?: string
+	hastags?:string
+	favori?:boolean
+	enregistrement?:boolean
 }
 
 export type UsersRecord = {
