@@ -6,3 +6,13 @@ export async function allArticles(){
     const records = await pb.collection('articles').getFullList();
     return records;
 }
+
+export async function allArticleFavori(){
+    const favarticles =await pb.collection('articles').getFullList({filter : 'favori=True'})
+    return favarticles;
+}
+
+export async function allArticleSave(){
+    const savearticles =await pb.collection('articles').getFullList({filter : 'enregistrement=True'})
+    return savearticles;
+}
