@@ -9,21 +9,19 @@ const img0= props.image
 // // si pas d'image (undefined) garde undefined
 const urlImg = pb.files.getUrl(props, img0, { thumb: '100x200' })
 
-import ssrCarousel from 'vue-ssr-carousel'
-import ssrCarouselCss from 'vue-ssr-carousel/index.css'
+
 </script>
 
 
 <template>
-    
+<!--     
     le carroussel de l'index
     <main>
-        
         {{ titre }}
         {{ description }}
         <img :src="urlImg"/>
             
         
         
-    </main>
+    </main> -->
 </template>
