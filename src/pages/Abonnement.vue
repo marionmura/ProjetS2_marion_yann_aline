@@ -67,7 +67,7 @@ import Usericon from '../components/icons/Usericon.vue'
 
         <input  type="checkbox" id="date" required class="" >
         <label class="text-white px-2" width="50px">J'accepte les 
-            <RouterLink to="/" class="text-violet">conditions générales de vente</RouterLink> 
+            <RouterLink to="/CGV" class="text-violet">conditions générales de vente</RouterLink> 
             d'IAmateur</label>
         </form>
 
