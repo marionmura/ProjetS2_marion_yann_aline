@@ -17,7 +17,7 @@ import {RouterLink} from 'vue-router'
                 <h4 >Abonnement</h4>
                 <ul class="ml-4">
                     <li class="text-white"><a href="#">Voir l'offre</a></li>
-                    <li class="text-white"><a href="#">Souscrire</a></li>
+                    <li class="text-white"><RouterLink to="/Abonnement">Souscrire</RouterLink></li>
                 </ul>
                 <span class="block h-[1px] w-[250px] bg-white lg:invisible lg:h-[0px] lg:w-[0px]"></span>
             </div>
@@ -25,7 +25,7 @@ import {RouterLink} from 'vue-router'
             <div class="space-y-4 mb-5">
                 <h4>Articles</h4>
                 <ul class="ml-4">
-                    <li class="text-white"><a href="#">Voir les articles récents</a></li>
+                    <li class="text-white"><RouterLink to="/">Voir les articles récents</RouterLink></li>
                     <li class="text-white"><a href="#">Voir les articles tendances</a></li>
                 </ul>
 
@@ -46,8 +46,8 @@ import {RouterLink} from 'vue-router'
             <div class="space-y-4 mb-6">
                 <h4>Mentions Légales</h4>
                 <ul class="ml-4">
-                    <li class="text-white"><a href="#">Politique des cookies</a></li>
-                    <li class="text-white"><a href="#">Politique de confidentialité</a></li>
+                    <li class="text-white"><RouterLink to="/PolitiqueCookies">Politique des cookies</RouterLink></li>
+                    <li class="text-white"><RouterLink to="/PolitiqueConfidentialite">Politique de confidentialité</RouterLink></li>
                 </ul>
             </div>
 
