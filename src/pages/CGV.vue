@@ -20,7 +20,7 @@ import Fleche from '../components/icons/Flechehaut.vue';
                 <li>Marion MURA : <a href="mailto:marion.mura@edu.univ-fcomte.fr">marion.mura@edu.univ-fcomte.fr</a></li>
                 <li>Yann PERNETTE : <a href="mailto:yann.pernette@edu.univ-fcomte.fr">yann.pernette@edu.univ-fcomte.fr</a></li>
             </ul>
-            <a href="#" class="flex flex-row-reverse"><Fleche /></a>
+            
         </div>
     </main>
 </template>
