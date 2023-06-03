@@ -10,19 +10,17 @@
       @apply font-cabin text-2xl text-violet;
     }
     h2{
-      @apply font-cabin font-bold text-xl tracking-wider;
+      @apply font-cabin font-bold text-xl lg:text-2xl tracking-wider;
     }
     h4{
       @apply font-dosis font-bold text-base text-white;
     }
     p{
-      @apply font-jost;
+      @apply font-jost lg:text-lg;
     }
     main{
       @apply bg-grisbg text-white;
     }
-    /*faire une class pour les p txt blanc > mais mettre tout le site en fond noir avant*/
-
   }
 
   @layout components{
@@ -37,9 +35,3 @@
     }
 }
 
-.like{
-  cursor: pointer;
-}
-.save{
-  cursor: pointer;
-}

@@ -8,7 +8,7 @@ import {RouterLink} from 'vue-router'
 </script>
 
 <template >
-    <header class="p-4 bg-noirbackground text-violet h-20 relative fixed z-10 w-full">
+    <header class="p-4 bg-noirbackground text-violet h-20 relative z-10 w-full">
         <div class="flex justify-between items-center px-2 lg:grid lg:grid-cols-2 ">
             <RouterLink class="" to="/"><IAmateurlogo/></RouterLink>
 
@@ -23,7 +23,7 @@ import {RouterLink} from 'vue-router'
                 </button>
             </div>
 
-            <div class="hidden h-[0] w-[0]  lg:visible lg:h-[20px] lg:w-[10px] lg:flex lg:flex-row  items-center ">
+            <div class="hidden h-[0] w-[0]  lg:visible lg:h-[20px]  lg:flex lg:flex-row lg:w-full lg:justify-end items-center ">
                 <RouterLink to="/Connexion">
                     <button class="flex-1 m-2 p-2 bg-white rounded-lg text-noirbackground font-bold ">Connexion</button>
                 </RouterLink>

@@ -15,6 +15,9 @@ const listeArticles = await allArticles()
   <h1 class="font-bold">page accueil avec la liste des articles</h1> -->
  
    <main>
-     <TemplateArticle v-for="unArticle of listeArticles" v-bind= "{...unArticle}" :v-key="unArticle.id"/>
+    <div class="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mx-4">
+      <TemplateArticle v-for="unArticle of listeArticles" v-bind= "{...unArticle}" :v-key="unArticle.id"/>
+    </div>
+     
    </main>
  </template>
