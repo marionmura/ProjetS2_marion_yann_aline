@@ -4,8 +4,9 @@
 
 export enum Collections {
 	Articles = "articles",
+	Carrousel = "carrousel",
 	Users = "users",
-	Carrousel = "carroussel",}
+}
 
 // Alias types for improved usability
 export type IsoDateString = string
@@ -31,13 +32,30 @@ export type AuthSystemFields<T = never> = {
 
 // Record types for each collection
 
+export enum ArticlesHastagsOptions {
+	"art" = "art",
+	"infos" = "infos",
+	"tech" = "tech",
+	"design" = "design",
+	"info" = "info",
+	"photo" = "photo",
+	"music" = "music",
+	"generative" = "generative",
+	"openAI" = "openAI",
+}
 export type ArticlesRecord = {
+	image?: string
 	nom?: string
 	paragraphe?: string
+	enregistrement?: boolean
+	favori?: boolean
+	hastags?: ArticlesHastagsOptions[]
+}
+
+export type CarrouselRecord = {
 	image?: string
-	hastags?:string
-	favori?:boolean
-	enregistrement?:boolean
+	titre?: string
+	description?: string
 }
 
 export type UsersRecord = {
@@ -45,28 +63,21 @@ export type UsersRecord = {
 	avatar?: string
 }
 
-export type CarrouselRecord = {
-	titre?: string
-	description?: string
-	image?: string
-}
-
 // Response types include system fields and match responses from the PocketBase API
 export type ArticlesResponse = Required<ArticlesRecord> & BaseSystemFields
-export type UsersResponse = Required<UsersRecord> & AuthSystemFields
 export type CarrouselResponse = Required<CarrouselRecord> & BaseSystemFields
-
+export type UsersResponse = Required<UsersRecord> & AuthSystemFields
 
 // Types containing all Records and Responses, useful for creating typing helper functions
 
 export type CollectionRecords = {
 	articles: ArticlesRecord
+	carrousel: CarrouselRecord
 	users: UsersRecord
-	carrousel : CarrouselRecord
 }
 
 export type CollectionResponses = {
 	articles: ArticlesResponse
-	users: UsersResponse
 	carrousel: CarrouselResponse
+	users: UsersResponse
 }

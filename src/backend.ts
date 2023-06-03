@@ -1,6 +1,5 @@
-import PocketBase from 'PocketBase';
-
-export const pb = new PocketBase('http://127.0.0.1:8090');
+import pocketbase from 'pocketbase';
+export const pb = new pocketbase('http://127.0.0.1:8090');
 
 export async function allArticles(){
     const records = await pb.collection('articles').getFullList();
