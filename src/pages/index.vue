@@ -16,12 +16,12 @@ const listeArticles = await allArticles()
  
    <main>
     <div class="flex gap-4 place-content-center">
-      <button class="button-v">tout</button>
-      <button class="button-v">design</button>
-      <button class="button-v">chat</button>
-      <button class="button-v">art</button>
-      <button class="button-v">tech</button>
-      <button class="button-v">info</button>
+      <button class="button-v activebutton">tout</button>
+      <button class="button-v activebutton">design</button>
+      <button class="button-v activebutton">chat</button>
+      <button class="button-v activebutton">art</button>
+      <button class="button-v activebutton">tech</button>
+      <button class="button-v activebutton">info</button>
     </div>
 
     <div class="grid grid-cols-1 place-items-center mx-8 md:grid-cols-2 lg:grid-cols-3 gap-4 ">

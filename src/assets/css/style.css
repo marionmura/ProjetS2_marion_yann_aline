@@ -35,11 +35,14 @@
     .activecheckbox {
       @apply  text-vert font-bold;
     }
-    .activebutton{
+    /* .activebutton{
       @apply bg-violet text-grisbg font-bold;
-    }
+    } */
     .button-v{
       @apply text-violet border-2 border-violet rounded-full px-2;
+    }
+    .activebutton{
+      @apply relative overflow-hidden before:absolute before:bottom-0 before:left-0 before:h-full before:w-full before:translate-y-full before:bg-violet before:text-grisbg before:font-bold before:transition-all before:duration-300 before:ease-linear hover:before:translate-y-0 ;
     }
 }
 

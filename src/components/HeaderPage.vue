@@ -38,7 +38,7 @@ function menuIsClosed() {
 
             </div>
         </div>
-        <nav class="invisible opacity-0  lg:hidden lg:relative fixed inset-0 h-screen w-screen bg-noirbackground"  :class="{'!visible !opacity-100':menuIsOpen}">
+        <nav class="invisible opacity-0  lg:hidden lg:relative fixed inset-0 h-screen w-screen bg-noirbackground"  :class="{'!visible !opacity-100':menuIsOpen}" 	v-scroll-lock="menuIsOpen">
             <ul class="mt-[80px] ml-[30px] space-x-10 flex flex-col gap-4 ">
                 <li><RouterLink class="active" to="/Espacepersonnel" @click="menuIsClosed">Espace personnel</RouterLink></li>
                 <li><RouterLink class="menu-link" to="/Mesfavoris" @click="menuIsClosed">Mes favoris</RouterLink></li>
