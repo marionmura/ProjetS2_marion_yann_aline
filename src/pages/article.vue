@@ -11,7 +11,7 @@ import Ampouleicon from '../components/icons/Ampouleicon.vue';
         <div class="px-10 pb-20 pt-40  ">
 
         <div class="-mt-40 lg:grid lg:grid-cols-2 lg:gap-4">
-            <img class="relative -top-10 h-60 object-cover w-full rounded-3xl lg:w-72 lg:h-60" src="../img/robot_2.webp" alt="Image principale de l'article">
+            <img class="relative -top-10 h-60 object-cover w-full rounded-3xl lg:w-72 lg:h-60" src="" alt="Image principale de l'article">
            
             <div class="grid grid-cols-6 gap-4 lg:relative lg:top-5 ">
                     <p class="col-span-12 hidden lg:block "> #tech • #robot •  #IA  </p>     
