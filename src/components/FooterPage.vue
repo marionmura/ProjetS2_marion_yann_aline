@@ -11,7 +11,7 @@ import {RouterLink} from 'vue-router'
 
     <footer class="pl-10 pt-10 flex flex-col bg-grisfooter">
 
-        <nav class=" flex flex-col gap-2 lg:grid lg:grid-cols-4">
+        <nav class=" flex flex-col gap-2 lg:grid lg:grid-cols-4 md:grid-cols-2 md:grid">
 
             <div class="space-y-4 mb-5">
                 <h4 >Abonnement</h4>
@@ -39,7 +39,7 @@ import {RouterLink} from 'vue-router'
                     <li class="text-white"><RouterLink to="/aPropos">Qui sommes-nous ?</RouterLink></li>
                 </ul>
 
-                <span class="block h-[1px] w-[250px] bg-white lg:invisible lg:h-[0px] lg:w-[0px]"></span>
+                <span class="block h-[1px] w-[250px] bg-white lg:hidden md:hidden lg:h-[0px] lg:w-[0px]"></span>
             </div>
 
 
