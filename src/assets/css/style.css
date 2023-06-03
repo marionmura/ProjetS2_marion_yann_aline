@@ -21,17 +21,25 @@
     main{
       @apply bg-grisbg text-white;
     }
+    
   }
 
   @layout components{
     .menu-link {
       @apply block px-5 py-4;
     }
+
   }
 
   @layer utilities {
     .activecheckbox {
       @apply  text-vert font-bold;
+    }
+    .activebutton{
+      @apply bg-violet text-grisbg font-bold;
+    }
+    .button-v{
+      @apply text-violet border-2 border-violet rounded-full px-2;
     }
 }
 
