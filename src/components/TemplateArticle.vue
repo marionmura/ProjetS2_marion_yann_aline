@@ -16,7 +16,7 @@ const urlImg = pb.files.getUrl(props, img0, { thumb: '100x200' })
 
 <template>
     <div class="relative w-[285px] h-[132px] rounded-lg lg:w-[320px] lg:h-[280px]">
-      <div class="absolute w-[285px] h-[132px] lg:w-[320px] lg:h-[280px] lg:flex lg:flex-col lg:justify-around ">
+      <div class="absolute w-[285px] h-[132px] lg:w-[320px] lg:h-[260px] lg:flex lg:flex-col lg:justify-around ">
         <div class="flex flex-row justify-between items-center">
           <h2 class="font-bold pt-2 pl-2 lg:pl-4">{{ nom }}</h2>
 
@@ -45,7 +45,7 @@ const urlImg = pb.files.getUrl(props, img0, { thumb: '100x200' })
         
       </div>
       
-      <img class="w-[285px] h-[133px] lg:w-[320px] lg:h-[280px] border-2 border-violet left-[-1px] top-[-1px] object-cover rounded-lg " :src="urlImg"/>
+      <img class="w-[285px] h-[133px] lg:w-[320px] lg:h-[260px] border-2 border-violet left-[-1px] top-[-1px] object-cover rounded-lg " :src="urlImg"/>
       
     </div>
 </template>
