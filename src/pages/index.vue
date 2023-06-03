@@ -16,7 +16,7 @@ const listeArticles = await allArticles()
  
    <main>
     <div class="flex gap-4 place-content-center">
-      <button class="button-v activebutton">tout</button>
+      <button class="button-v activebutton" >tout</button>
       <button class="button-v activebutton">design</button>
       <button class="button-v activebutton">chat</button>
       <button class="button-v activebutton">art</button>
