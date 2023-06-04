@@ -26,3 +26,12 @@ coverage
 *.njsproj
 *.sln
 *.sw?
+
+
+# PocketBase
+/pocketbase/pb_data
+/pocketbase/pb_data.zip
+/pocketbase/pocketbase
+/pocketbase/pocketbase.exe
+/pocketbase/CHANGELOG.md
+/pocketbase/LICENSE.md
