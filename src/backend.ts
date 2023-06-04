@@ -24,7 +24,7 @@ export async function allArticleSave(){
 }
 
 export async function oneIA(id:string){
-    const oneia = await pb.collection('articles_blog').getOne<ArticlesBlogResponse>(id, {expand:'previewlien',
+    const oneia = await pb.collection('articles').getOne<ArticlesResponse>(id, {expand:'previewlien',
     '$autoCancel': false});
     return oneia;
 }

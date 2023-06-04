@@ -1,11 +1,12 @@
 <script setup lang="ts">
-import { pb } from '@/backend' ;
+import { pb } from '@/backend';
+import type { ArticlesResponse } from '@/pocketbase-types';
+
 import Likeicon from '@/components/icons/Likeicon.vue';
 import Saveicon from '@/components/icons/Saveicon.vue';
 import Ampouleicon from '@/components/icons/Ampouleicon.vue';
-import type { ArticlesBlogResponse } from '@/pocketbase-types'
 
-const props: ArticlesBlogResponse = defineProps<ArticlesBlogResponse>()
+const props: ArticlesResponse = defineProps<ArticlesResponse>();
 // const img0= props.image_artiste[1]
 // const urlImg = pb.files.getUrl(props, img0, { thumb: '100x200' })
 
@@ -22,7 +23,7 @@ const props: ArticlesBlogResponse = defineProps<ArticlesBlogResponse>()
            
             <div class="grid grid-cols-6 gap-4 lg:relative lg:top-5 ">
                     <p class="col-span-12 hidden lg:block "> #tech • #robot •  #IA  </p>     
-                    <h1 class=" lg:relative lg:col-start-2 lg:bottom-5">{{ nom_ia }}</h1>
+                    <h1 class=" lg:relative lg:col-start-2 lg:bottom-5">{{ nom }}</h1>
                         <div class="col-end-11 lg:relative lg:bottom-5"><Saveicon /></div>
                         <div class="col-end-12 lg:relative lg:bottom-5"><Likeicon /></div>
                     <p class=" text-violet col-span-12 lg:relative lg:bottom-20 lg:col-start-2"> Conçu par Open AI  </p>     

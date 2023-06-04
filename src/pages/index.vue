@@ -30,7 +30,7 @@ const sectionOpen = ref(1)
       <li v-for="unArticle of listeArticles" v-bind= "{...unArticle}" :v-key="unArticle.id">
         <RouterLink
               :to="{
-                name: 'id',
+                name: 'articles-id',
                 params: {
                   id: unArticle.id
                 }

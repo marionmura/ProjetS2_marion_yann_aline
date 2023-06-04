@@ -55,13 +55,8 @@ export type ArticlesRecord = {
 
 export type ArticlesBlogRecord = {
 	nom_ia?: string
-	auteur_conception?: string
-	fonctionnalites?: string
-	titre_utilisation?: string
-	paragraphe_utilisation?: string
-	titre_premium?: string
-	paragraphe_premium?: string
-	paragraphe_tuto?: string
+	auteur?: string
+	blable?: string
 	previewlien?: RecordIdString
 }
 
