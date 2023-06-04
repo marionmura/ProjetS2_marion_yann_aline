@@ -7,7 +7,9 @@ const listeArticles = await allArticles()
 
 // import Carrousel from '@/components/Carrousel.vue';
 // const listecarrousel = await allcarrousel()
-
+//buttons interactifs 
+import { ref } from 'vue';
+const sectionOpen = ref(1)
 </script>
 
 <template>
@@ -15,6 +17,18 @@ const listeArticles = await allArticles()
   <h1 class="font-bold">page accueil avec la liste des articles</h1> -->
  
    <main>
-     <TemplateArticle v-for="unArticle of listeArticles" v-bind= "{...unArticle}" :v-key="unArticle.id"/>
+    <div class="flex gap-4 place-content-center">
+      <button class="button-v activebutton" :class="{'activebuttonclicked':sectionOpen}" @click="sectionOpen =1">tout</button>
+      <button class="button-v activebutton" @click="sectionOpen =2">design</button>
+      <button class="button-v activebutton"  @click="sectionOpen =3">chat</button>
+      <button class="button-v activebutton"  @click="sectionOpen =4">art</button>
+      <button class="button-v activebutton"  @click="sectionOpen =5">tech</button>
+      <button class="button-v activebutton"  @click="sectionOpen =6">info</button>
+    </div>
+
+    <div class="grid grid-cols-1 place-items-center mx-8 md:grid-cols-2 lg:grid-cols-3 gap-4 ">
+      <TemplateArticle v-for="unArticle of listeArticles" v-bind= "{...unArticle}" :v-key="unArticle.id"/>
+    </div>
+     
    </main>
  </template>

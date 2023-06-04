@@ -5,10 +5,14 @@ const menuIsOpen = ref(false)
 import Usericon from './icons/Usericon.vue';
 import IAmateurlogo from './icons/IAmateurlogo.vue';
 import {RouterLink} from 'vue-router'
+
+function menuIsClosed() {
+	  menuIsOpen.value = false
+	}
 </script>
 
 <template >
-    <header class="p-4 bg-noirbackground text-violet h-20 relative fixed z-10 w-full">
+    <header class="p-4 bg-noirbackground text-violet h-20 relative z-10 w-full">
         <div class="flex justify-between items-center px-2 lg:grid lg:grid-cols-2 ">
             <RouterLink class="" to="/"><IAmateurlogo/></RouterLink>
 
@@ -23,9 +27,9 @@ import {RouterLink} from 'vue-router'
                 </button>
             </div>
 
-            <div class="hidden h-[0] w-[0]  lg:visible lg:h-[20px] lg:w-[10px] lg:flex lg:flex-row  items-center ">
+            <div class="hidden h-[0] w-[0]  lg:visible lg:h-[20px]  lg:flex lg:flex-row lg:w-full lg:justify-end items-center ">
                 <RouterLink to="/Connexion">
-                    <button class="flex-1 m-2 p-2 bg-white rounded-lg text-noirbackground font-bold ">Connexion</button>
+                    <button class="flex-1 m-2 p-2 bg-white rounded-lg text-noirbackground font-bold " >Connexion</button>
                 </RouterLink>
 
                 <RouterLink to="/Inscription">
@@ -34,12 +38,12 @@ import {RouterLink} from 'vue-router'
 
             </div>
         </div>
-        <nav class="invisible opacity-0  lg:hidden lg:relative fixed inset-0 h-screen w-screen bg-noirbackground"  :class="{'!visible !opacity-100':menuIsOpen}">
+        <nav class="invisible opacity-0  lg:hidden lg:relative fixed inset-0 h-screen w-screen bg-noirbackground"  :class="{'!visible !opacity-100':menuIsOpen}" 	v-scroll-lock="menuIsOpen">
             <ul class="mt-[80px] ml-[30px] space-x-10 flex flex-col gap-4 ">
-                <li><RouterLink class="active" to="/Espacepersonnel" >Espace personnel</RouterLink></li>
-                <li><RouterLink class="menu-link" to="/Mesfavoris">Mes favoris</RouterLink></li>
-                <li><RouterLink class="menu-link" to="/Mesarticlesenregistres">Mes articles enregistrés</RouterLink></li>
-                <li><RouterLink class="menu-link" to="/aPropos">À propos</RouterLink></li>
+                <li><RouterLink class="active" to="/Espacepersonnel" @click="menuIsClosed">Espace personnel</RouterLink></li>
+                <li><RouterLink class="menu-link" to="/Mesfavoris" @click="menuIsClosed">Mes favoris</RouterLink></li>
+                <li><RouterLink class="menu-link" to="/Mesarticlesenregistres" @click="menuIsClosed">Mes articles enregistrés</RouterLink></li>
+                <li><RouterLink class="menu-link" to="/aPropos" @click="menuIsClosed">À propos</RouterLink></li>
             </ul>
 
             <span class="mt-5 mb-2 ml-[2rem] block h-[2px] w-[300px] bg-violet"></span>

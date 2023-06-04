@@ -10,36 +10,59 @@
       @apply font-cabin text-2xl text-violet;
     }
     h2{
-      @apply font-cabin font-bold text-xl tracking-wider;
+      @apply font-cabin font-bold text-xl lg:text-2xl tracking-wider;
     }
     h4{
       @apply font-dosis font-bold text-base text-white;
     }
     p{
-      @apply font-jost;
+      @apply font-jost lg:text-lg;
     }
     main{
       @apply bg-grisbg text-white;
     }
-    /*faire une class pour les p txt blanc > mais mettre tout le site en fond noir avant*/
-
+    
   }
 
   @layout components{
     .menu-link {
       @apply block px-5 py-4;
     }
+
   }
 
   @layer utilities {
-    .activecheckbox {
+    /* .activecheckbox {
       @apply  text-vert font-bold;
+    } */
+    .button-v{
+      @apply text-violet border-2 border-violet rounded-full px-2;
     }
+    /* .activebutton{
+      @apply relative overflow-hidden before:absolute before:bottom-0 before:left-0 before:h-full before:w-full before:translate-y-full before:bg-violet after:text-grisbg before:opacity-100 before:font-bold before:transition-all before:duration-300 before:ease-linear hover:before:translate-y-0 ;} */
+    /* } pb pour mettre du texte en gris avec les classe actives */
+    
 }
 
-.like{
-  cursor: pointer;
+.activebutton {
+  position: relative;
+  overflow: hidden;
+  transition: all 300ms ease-linear;
 }
-.save{
-  cursor: pointer;
+
+ .activebutton:hover {
+  color: #171C30;
+  background-color:  #92A1FF;
+  font-weight: bold;
+}   
+
+.activecheckbox:hover {
+  color:#92FFB1;
+  font-weight: bold;
 }
+
+.activebuttonclicked {
+  color: #171C30;
+  background-color:  #92A1FF;
+  font-weight: bold;
+}   

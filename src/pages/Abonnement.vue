@@ -30,14 +30,14 @@ import Usericon from '../components/icons/Usericon.vue'
         <fieldset>
             <legend class="pt-[20px] text-violet ">Moyen de paiement</legend>
 
-            <div class="text-violet activecheckbox">
+            <div class="text-violet ">
                 <input type="radio" id="CB" name="paiement" value="CB" checked class="">
-                <label for="CB">Carte de crédit ou débit</label>
+                <label class="activecheckbox" for="CB">Carte de crédit ou débit</label>
             </div>
 
-            <div class="text-violet">
-                <input type="radio" id="paypal" name="paiement" value="paypal">
-                <label for="paypal">Paypal</label>
+            <div class="text-violet ">
+                <input type="radio" id="paypal" checked name="paiement" value="paypal">
+                <label class="activecheckbox" for="paypal">Paypal</label>
             </div>
         </fieldset>        
 
