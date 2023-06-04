@@ -28,6 +28,7 @@ export async function oneIA(id:string){
     '$autoCancel': false});
     return oneia;
 }
+
 // export async function allcarrousel(){
 //     const carrousel =await pb.collection('carrousel').getFullList()
 //     return carrousel;
