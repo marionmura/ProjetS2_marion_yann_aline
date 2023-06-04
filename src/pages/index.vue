@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import { Collections } from '@/pocketbase-types';
 import type { ArticlesResponse } from '@/pocketbase-types';
-import TemplateArticle from '@/components/TemplateArticle.vue';
+import TemplatePreview from '@/components/TemplatePreview.vue';
 import { allArticles } from '@/backend';
 const listeArticles = await allArticles()
 
@@ -26,9 +26,21 @@ const sectionOpen = ref(1)
       <button class="button-v activebutton"  @click="sectionOpen =6">info</button>
     </div>
 
-    <div class="grid grid-cols-1 place-items-center mx-8 md:grid-cols-2 lg:grid-cols-3 gap-4 ">
-      <TemplateArticle v-for="unArticle of listeArticles" v-bind= "{...unArticle}" :v-key="unArticle.id"/>
-    </div>
+    <ul class="grid grid-cols-1 place-items-center mx-8 md:grid-cols-2 lg:grid-cols-3 gap-4 ">
+      <li v-for="unArticle of listeArticles" v-bind= "{...unArticle}" :v-key="unArticle.id">
+        <RouterLink
+              :to="{
+                name: 'articles-id',
+                params: {
+                  id: unArticle.id
+                }
+              }"
+            >
+        <TemplatePreview  v-bind= "{...unArticle}" />
+      </RouterLink>
+      </li>
+      
+    </ul>
      
    </main>
  </template>

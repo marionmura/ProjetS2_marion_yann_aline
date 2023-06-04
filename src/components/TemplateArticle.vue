@@ -1,54 +1,87 @@
 <script setup lang="ts">
-import arrowright from './icons/Arrowright.vue';
-// import Likeicon from './icons/Likeicon.vue';
-// import Saveicon from './icons/Saveicon.vue';
-import { pb } from '@/backend' ;
-import type { ArticlesResponse } from '@/pocketbase-types'
+import { pb } from '@/backend';
+import type { ArticlesResponse } from '@/pocketbase-types';
 
-const props: ArticlesResponse = defineProps<ArticlesResponse>()
+import Likeicon from '@/components/icons/Likeicon.vue';
+import Saveicon from '@/components/icons/Saveicon.vue';
+import Ampouleicon from '@/components/icons/Ampouleicon.vue';
 
-const img0= props.image
-// // si pas d'image (undefined) garde undefined
-const urlImg = pb.files.getUrl(props, img0, { thumb: '100x200' })
-
+const props: ArticlesResponse = defineProps<ArticlesResponse>();
+// const img0= props.image_artiste[1]
+// const urlImg = pb.files.getUrl(props, img0, { thumb: '100x200' })
 
 </script>
 
 <template>
-    <div class="relative w-[285px] h-[132px] rounded-lg lg:w-[320px] lg:h-[280px]">
-      <div class="absolute w-[285px] h-[132px] lg:w-[320px] lg:h-[260px] lg:flex lg:flex-col lg:justify-around ">
-        <div class="flex flex-row justify-between items-center">
-          <h2 class="font-bold pt-2 pl-2 lg:pl-4">{{ nom }}</h2>
 
+    <main class="pt-20 bg-grisbg text-white lg:grid lg:grid-cols-3 lg:px-20">
+    <div class="bg-grisfooter rounded-3xl mt-32 lg:col-span-2 mb-12">
+        <div class="px-10 pb-20 pt-40  ">
 
-          <div class="flex gap-2 m-2">
-            <div class="lg:w-[20px] lg:h-auto">
-              <svg width="16" height="20" viewBox="0 0 16 20" fill="none" :class="{'fill-violet': enregistrement }" xmlns="http://www.w3.org/2000/svg">
-              <path d="M13.2201 1.3235C14.2468 1.45149 15 2.4004 15 3.50831V19L8 15.2503L1 19V3.50831C1 2.4004 1.75227 1.45149 2.77987 1.3235C6.24831 0.892168 9.75169 0.892168 13.2201 1.3235Z" stroke="#92A1FF" stroke-linecap="round" stroke-linejoin="round"/>
-              </svg>
+        <div class="-mt-40 lg:grid lg:grid-cols-2 lg:gap-4">
+            <img class="relative -top-10 h-60 object-cover w-full rounded-3xl lg:w-72 lg:h-60" src="" alt="Image principale de l'article">
+           
+            <div class="grid grid-cols-6 gap-4 lg:relative lg:top-5 ">
+                    <p class="col-span-12 hidden lg:block "> #tech • #robot •  #IA  </p>     
+                    <h1 class=" lg:relative lg:col-start-2 lg:bottom-5">{{ nom }}</h1>
+                        <div class="col-end-11 lg:relative lg:bottom-5"><Saveicon /></div>
+                        <div class="col-end-12 lg:relative lg:bottom-5"><Likeicon /></div>
+                    <p class=" text-violet col-span-12 lg:relative lg:bottom-20 lg:col-start-2"> Conçu par Open AI  </p>     
             </div>
+        </div>  
+            
+            <h3 class=" mt-8">Fonctionnalités : </h3>
+                <li>IA générative</li>
+                <li> IA artistique</li>
+                <li> utilisation via discord</li>
+                
+            <h2 class=" mt-8">Pourquoi utiliser Midjourney ?</h2>
+            <p>
+                Vous avez des difficultés en dessin ou juste pour représenter vos idées ? Alors la solution est simple ! Midjourney vous aidera, à partir d'une simple description de ce que vous souhaitez l'IA peut générer 4 images de styles différents et vous avez juste choisir votre préférée pour l'améliorer. 
+            </p>
 
-            <div class="">
-              <svg width="22" height="20" viewBox="0 0 22 20" fill="none" :class="{'fill-white': favori }" xmlns="http://www.w3.org/2000/svg">
-              <path d="M21 5.90909C21 3.19818 18.6678 1 15.7911 1C13.6411 1 11.7944 2.22836 11 3.98145C10.2056 2.22836 8.35889 1 6.20778 1C3.33333 1 1 3.19818 1 5.90909C1 13.7855 11 19 11 19C11 19 21 13.7855 21 5.90909Z" stroke="white" stroke-linecap="round" stroke-linejoin="round"/>
-              </svg>
-            </div>
-          </div>
-          
+            <h2 class=" mt-8">Version Midjourney premium disponible</h2>
+            <p>
+                fonctionnalités bonus :
+                permet de générer de façon illimitée
+                l'offre gratuite est limitée à 25 lots d'images        
+            </p>
+
+                <div class="flex flex-row gap-4 mt-8">
+                    <icon><Ampouleicon /></icon>
+                    <h2>Comment utiliser Midjourney - tuto aide</h2>
+              </div>
+            <p>
+                Il faut au préalable avoir un compte discord
+                allez sur le site de Midjourney
+                défilez la page et cliquer sur “join our Discord”
+                le site vous redirigera vers un serveur discord où il faudra vérifier le capchat
+
+                Pour utiliser l'IA
+                allez sur un salon nommé #newbies- (avec n'importe quel numéro)
+                entrez la description de l'image que vous souhaitez générer
+                attendre que l'IA génère l'image (1 minute environ)
+
+                possibilité d'améliorer une des 4versions proposées en cliquant sur une réaction en fin de message
+                possibilité d'améliorer l'image et de la retoucher
+                terminez en enregistrant l'image
+
+                Vous pouvez répéter cette opération 25 fois uniquement, pour pouvoir en faire plus il faudra acheter un des abonnements proposés : 
+                un plan basique à 8 $/mois 
+                un plan standart à 24 $/mois (permet de générer sans limitations)
+                un plan pro à 48 $/mois (permet de générer sans limitations)
+
+                Les 3 abonnements vous permettront de créer des images directement dans vos messages privés et non plus sur le channel discord accessible aux milliers d'utilisateurs.
+
+                Retrouvez tout le mode d'emploi sur le site de Midjourney.
+            </p>
         </div>
-        
-        <p class="font-light px-2 lg:px-4">{{ paragraphe }} </p>
-        <div class="flex justify-end px-2 items-center gap-2">
-          <p class="font-light">en lire plus</p>
-          <arrowright/>
-        </div>
-        
-      </div>
-      
-      <img class="w-[285px] h-[133px] lg:w-[320px] lg:h-[260px] border-2 border-violet left-[-1px] top-[-1px] object-cover rounded-lg " :src="urlImg"/>
-      
     </div>
-</template>
 
-<!--object cover permet d'avoir une image recadrée mais pas déformée :)
-soucis pour colorer le svg lorsqu'il est liké ou enregistré donc svg directement ici-->
+        <div class="space-y-2 lg:mt-40">
+            <h2 class="text-violet mt-8 text-center lg:text-white lg:font-cabin lg:text-2xl lg:uppercase font-medium">Articles similaires</h2>
+            <hr class="text-violet pb-8 text-center lg:relative lg:left-20 lg:ml-30 lg:border-t-2">
+        </div>
+        
+    </main>
+</template>
