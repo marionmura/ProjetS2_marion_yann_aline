@@ -1,7 +1,14 @@
 <script setup lang="ts">
 import Likeicon from '@/components/icons/Likeicon.vue';
 import Saveicon from '@/components/icons/Saveicon.vue';
-import Ampouleicon from '../components/icons/Ampouleicon.vue';
+import Ampouleicon from '@/components/icons/Ampouleicon.vue';
+
+import { pb } from '@/backend' ;
+import type { ArticlesResponse } from '@/pocketbase-types'
+
+import { oneIA } from "@/backend";
+const props = defineProps<ArticlesResponse>()
+const uneoeuvre = await oneIA(props.id)
 </script>
 
 <template>

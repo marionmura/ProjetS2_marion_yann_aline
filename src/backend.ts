@@ -23,6 +23,11 @@ export async function allArticleSave(){
     return savearticles;
 }
 
+export async function oneIA(id:string){
+    const oneia = await pb.collection('articles').getOne<ArticlesResponse>(id, {expand:'article_lien',
+    '$autoCancel': false});
+    return oneia;
+}
 // export async function allcarrousel(){
 //     const carrousel =await pb.collection('carrousel').getFullList()
 //     return carrousel;

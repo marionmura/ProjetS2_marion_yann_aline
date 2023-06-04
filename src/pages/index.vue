@@ -26,9 +26,21 @@ const sectionOpen = ref(1)
       <button class="button-v activebutton"  @click="sectionOpen =6">info</button>
     </div>
 
-    <div class="grid grid-cols-1 place-items-center mx-8 md:grid-cols-2 lg:grid-cols-3 gap-4 ">
-      <TemplateArticle v-for="unArticle of listeArticles" v-bind= "{...unArticle}" :v-key="unArticle.id"/>
-    </div>
+    <ul class="grid grid-cols-1 place-items-center mx-8 md:grid-cols-2 lg:grid-cols-3 gap-4 ">
+      <li v-for="unArticle of listeArticles" v-bind= "{...unArticle}" :v-key="unArticle.id">
+        <RouterLink
+              :to="{
+                name: 'articles-id',
+                params: {
+                  id: unArticle.id
+                }
+              }"
+            >
+        <TemplateArticle  v-bind= "{...unArticle}" />
+      </RouterLink>
+      </li>
+      
+    </ul>
      
    </main>
  </template>
