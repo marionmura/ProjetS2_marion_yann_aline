@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import { Collections } from '@/pocketbase-types';
 import type { ArticlesResponse } from '@/pocketbase-types';
-import TemplateArticle from '@/components/TemplateArticle.vue';
+import TemplatePreview from '@/components/TemplatePreview.vue';
 import { allArticles } from '@/backend';
 const listeArticles = await allArticles()
 
@@ -30,13 +30,13 @@ const sectionOpen = ref(1)
       <li v-for="unArticle of listeArticles" v-bind= "{...unArticle}" :v-key="unArticle.id">
         <RouterLink
               :to="{
-                name: 'articles-id',
+                name: 'id',
                 params: {
                   id: unArticle.id
                 }
               }"
             >
-        <TemplateArticle  v-bind= "{...unArticle}" />
+        <TemplatePreview  v-bind= "{...unArticle}" />
       </RouterLink>
       </li>
       

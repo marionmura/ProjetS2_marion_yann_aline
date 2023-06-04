@@ -1,5 +1,5 @@
 import pocketbase from 'pocketbase';
-import type{ ArticlesResponse } from './pocketbase-types';
+import type{ ArticlesResponse, ArticlesBlogResponse } from './pocketbase-types';
 export const pb = new pocketbase('http://127.0.0.1:8090');
 
 export async function allArticles(){
@@ -24,7 +24,7 @@ export async function allArticleSave(){
 }
 
 export async function oneIA(id:string){
-    const oneia = await pb.collection('articles').getOne<ArticlesResponse>(id, {expand:'article_lien',
+    const oneia = await pb.collection('articles_blog').getOne<ArticlesBlogResponse>(id, {expand:'previewlien',
     '$autoCancel': false});
     return oneia;
 }

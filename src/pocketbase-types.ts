@@ -4,6 +4,7 @@
 
 export enum Collections {
 	Articles = "articles",
+	ArticlesBlog = "articles_blog",
 	Carrousel = "carrousel",
 	Users = "users",
 }
@@ -44,12 +45,24 @@ export enum ArticlesHastagsOptions {
 	"openAI" = "openAI",
 }
 export type ArticlesRecord = {
-	image: string
-	nom: string
-	paragraphe: string
+	image?: string
+	nom?: string
+	paragraphe?: string
 	enregistrement?: boolean
 	favori?: boolean
 	hastags?: ArticlesHastagsOptions[]
+}
+
+export type ArticlesBlogRecord = {
+	nom_ia?: string
+	auteur_conception?: string
+	fonctionnalites?: string
+	titre_utilisation?: string
+	paragraphe_utilisation?: string
+	titre_premium?: string
+	paragraphe_premium?: string
+	paragraphe_tuto?: string
+	previewlien?: RecordIdString
 }
 
 export type CarrouselRecord = {
@@ -65,6 +78,7 @@ export type UsersRecord = {
 
 // Response types include system fields and match responses from the PocketBase API
 export type ArticlesResponse = Required<ArticlesRecord> & BaseSystemFields
+export type ArticlesBlogResponse<Texpand = unknown> = Required<ArticlesBlogRecord> & BaseSystemFields<Texpand>
 export type CarrouselResponse = Required<CarrouselRecord> & BaseSystemFields
 export type UsersResponse = Required<UsersRecord> & AuthSystemFields
 
@@ -72,12 +86,14 @@ export type UsersResponse = Required<UsersRecord> & AuthSystemFields
 
 export type CollectionRecords = {
 	articles: ArticlesRecord
+	articles_blog: ArticlesBlogRecord
 	carrousel: CarrouselRecord
 	users: UsersRecord
 }
 
 export type CollectionResponses = {
 	articles: ArticlesResponse
+	articles_blog: ArticlesBlogResponse
 	carrousel: CarrouselResponse
 	users: UsersResponse
 }
