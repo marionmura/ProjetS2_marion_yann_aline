@@ -18,12 +18,12 @@ const sectionOpen = ref(1)
  
    <main>
     <div class="flex gap-4 place-content-center">
-      <button class="button-v activebutton" :class="{'activebuttonclicked':sectionOpen}" @click="sectionOpen =1">tout</button>
-      <button class="button-v activebutton" @click="sectionOpen =2">design</button>
-      <button class="button-v activebutton"  @click="sectionOpen =3">chat</button>
-      <button class="button-v activebutton"  @click="sectionOpen =4">art</button>
-      <button class="button-v activebutton"  @click="sectionOpen =5">tech</button>
-      <button class="button-v activebutton"  @click="sectionOpen =6">info</button>
+      <button class="button-v activebutton" :class="{'activebuttonclicked':sectionOpen == 1}" @click="sectionOpen = 1">tout</button>
+      <button class="button-v activebutton" :class="{'activebuttonclicked':sectionOpen == 2}" @click="sectionOpen = 2">design</button>
+      <button class="button-v activebutton" :class="{'activebuttonclicked':sectionOpen == 3}" @click="sectionOpen = 3">chat</button>
+      <button class="button-v activebutton" :class="{'activebuttonclicked':sectionOpen == 4}" @click="sectionOpen = 4">art</button>
+      <button class="button-v activebutton" :class="{'activebuttonclicked':sectionOpen == 5}" @click="sectionOpen = 5">tech</button>
+      <button class="button-v activebutton" :class="{'activebuttonclicked':sectionOpen == 6}" @click="sectionOpen = 6">info</button>
     </div>
 
     <ul class="grid grid-cols-1 place-items-center mx-8 md:grid-cols-2 lg:grid-cols-3 gap-4 ">
