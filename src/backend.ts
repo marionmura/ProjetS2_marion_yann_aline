@@ -1,6 +1,7 @@
 import pocketbase from 'pocketbase';
 import type{ ArticlesResponse } from './pocketbase-types';
-export const pb = new pocketbase('http://127.0.0.1:8090');
+export const pb = new pocketbase('http://projets2.marionmura.fr:9002');
+// export const pb = new pocketbase('http://127.0.0.1:8090');
 
 export async function allArticles(){
     const records = await pb.collection('articles').getFullList<ArticlesResponse>({
