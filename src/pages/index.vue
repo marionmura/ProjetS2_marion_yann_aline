@@ -10,6 +10,7 @@ const listeArticles = await allArticles()
 //buttons interactifs 
 import { ref } from 'vue';
 const sectionOpen = ref(1)
+
 </script>
 
 <template>

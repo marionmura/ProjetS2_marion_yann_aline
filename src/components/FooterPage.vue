@@ -35,7 +35,7 @@ import {RouterLink} from 'vue-router'
             <div class="space-y-4 mb-5">
                 <h4>Contact</h4>
                 <ul class="ml-4"> 
-                    <li class="text-white"><a href="#">Contactez-nous</a></li>
+                    <li class="text-white"><RouterLink to="/Contact">Contactez-nous</RouterLink></li>
                     <li class="text-white"><RouterLink to="/aPropos">Qui sommes-nous ?</RouterLink></li>
                 </ul>
 

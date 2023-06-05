@@ -3,7 +3,9 @@ import { onMounted, ref } from 'vue';
 import pocketbase from 'pocketbase';
 
 let pb: any = null;
-const currentUser = ref();
+
+const currentUser = ref()
+
 const email = ref("");
 const password = ref("");
 const username = ref("");
@@ -78,7 +80,7 @@ const doCreerCompte = async () => {
       
           <!-- <p class="text-violet border-b-2 w-[200px]" v-on:click="reset()">J'ai oublié mon mot de passe</p> -->
         </div>
-      </form>
+      
     
       <div v-if="loginMode">
         <div class="flex flex-row justify-end mt-5 pb-[10px]">
@@ -99,7 +101,9 @@ const doCreerCompte = async () => {
           <button @click="loginMode = true" class="p-1 pl-3 pr-3 m-1 font-bold rounded-full text-white bg-rouge" v-on:click="">J'ai déjà un compte</button>  
         </div>
       </div>
+    </form>
     </div>
+    
 
   </main>
 </template>
