@@ -75,6 +75,8 @@ const doCreerCompte = async () => {
         <div class="flex flex-row justify-end mt-5 pb-[10px]">
           <button @click="doCreerCompte" class="p-1 pl-3 pr-3 m-1 font-bold rounded-full text-noirbackground bg-white">Enregistrer nouvel utilisateur</button>
           <RouterLink class="p-1 pl-3 pr-3 m-1 font-bold rounded-full text-white bg-rouge" to="/Connexion">J'ai déjà un compte</RouterLink>  
+          <RouterLink class="p-1 pl-3 pr-3 m-1 font-bold rounded-full text-white bg-rouge" to="/DemandeChangementMDP">J'ai oublié mon mot de passe</RouterLink>  
+
         </div>
     </form>
 
