@@ -44,9 +44,9 @@ export enum ArticlesHastagsOptions {
 	"openAI" = "openAI",
 }
 export type ArticlesRecord = {
-	image: string
-	nom: string
-	paragraphe: string
+	image?: string
+	nom?: string
+	paragraphe?: string
 	enregistrement?: boolean
 	favori?: boolean
 	hastags?: ArticlesHastagsOptions[]
@@ -59,7 +59,6 @@ export type CarrouselRecord = {
 }
 
 export type UsersRecord = {
-	name?: string
 	avatar?: string
 }
 
