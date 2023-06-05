@@ -37,6 +37,47 @@ export async function oneIA(id:string){
     '$autoCancel': false});
     return oneia;
 }
+
+export async function IAdesign(){
+    const records = await pb.collection('articles').getFullList<ArticlesResponse>({
+        filter: `categorie = "design" `,
+        '$autoCancel': false
+    });
+    return records;
+}
+
+export async function IAchat(){
+    const records = await pb.collection('articles').getFullList<ArticlesResponse>({
+        filter: `categorie = "chat" `,
+        '$autoCancel': false
+    });
+    return records;
+}
+
+export async function IAart(){
+    const records = await pb.collection('articles').getFullList<ArticlesResponse>({
+        filter: `categorie = "art" `,
+        '$autoCancel': false
+    });
+    return records;
+}
+
+export async function IAtech(){
+    const records = await pb.collection('articles').getFullList<ArticlesResponse>({
+        filter: `categorie = "tech" `,
+        '$autoCancel': false
+    });
+    return records;
+}
+
+export async function IAinfo(){
+    const records = await pb.collection('articles').getFullList<ArticlesResponse>({
+        filter: `categorie = "info" `,
+        '$autoCancel': false
+    });
+    return records;
+}
+
 // export async function allcarrousel(){
 //     const carrousel =await pb.collection('carrousel').getFullList()
 //     return carrousel;
