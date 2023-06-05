@@ -1,10 +1,12 @@
 <script setup lang="ts">
 import { onMounted, ref } from 'vue';
 import pocketbase from 'pocketbase';
+import { useRouter } from 'vue-router';
 
 let pb: any = null;
 
 const currentUser = ref()
+const router = useRouter()
 
 const email = ref("");
 
@@ -21,6 +23,7 @@ const doDemande = async () => {
   try {
     await pb.collection('users').requestPasswordReset(email.value);
     alert("Demande de réinitialisation de mot de passe envoyée")
+    pb.authStore.isValid && router.replace("/UserPage");
   } catch (error) {
   }
 }

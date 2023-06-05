@@ -1,10 +1,12 @@
 <script setup lang="ts">
 import { onMounted, ref } from 'vue';
 import pocketbase from 'pocketbase';
+import { useRouter } from 'vue-router';
 
 let pb: any = null;
 
 const currentUser = ref()
+const router = useRouter()
 
 const email = ref("");
 const password = ref("");
@@ -20,11 +22,7 @@ onMounted(async () => {
 const doSeConnecter = async () => {
   try {
     const authData = await pb.collection('users').authWithPassword(email.value, password.value);
-
-    // after the above you can also access the auth data from the authStore
-    console.log(pb.authStore.isValid);
-    console.log(pb.authStore.token);
-    console.log(pb.authStore.model);
+    pb.authStore.isValid && router.replace("/UserPage");
   } catch (error) {
     alert("Quelque chose s'est mal passé, veuillez réessayer")
   }

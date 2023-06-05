@@ -10,7 +10,6 @@ const listeArticles = await allArticles()
 //buttons interactifs 
 import { ref } from 'vue';
 const sectionOpen = ref(1)
-
 </script>
 
 <template>
@@ -18,6 +17,11 @@ const sectionOpen = ref(1)
   <h1 class="font-bold">page accueil avec la liste des articles</h1> -->
  
    <main>
+
+    <div class="flex flex-row justify-end mt-5 pb-[10px]">
+      <RouterLink class="p-1 pl-3 pr-3 m-1 font-bold rounded-full text-white bg-grisfooter" to="/UserPage">User Page</RouterLink>  
+    </div>
+
     <div class="flex gap-4 place-content-center">
       <button class="button-v activebutton" :class="{'activebuttonclicked':sectionOpen == 1}" @click="sectionOpen = 1">tout</button>
       <button class="button-v activebutton" :class="{'activebuttonclicked':sectionOpen == 2}" @click="sectionOpen = 2">design</button>

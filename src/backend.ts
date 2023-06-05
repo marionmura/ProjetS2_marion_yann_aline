@@ -1,6 +1,15 @@
 import pocketbase from 'pocketbase';
+import { ref } from 'vue';
 import type{ ArticlesResponse } from './pocketbase-types';
 export const pb = new pocketbase('http://127.0.0.1:8090');
+
+// export const usepocketbase = () => {
+//         let pb = ref(null);
+//         pb.value = new pocketbase('http://127.0.0.1:8090');
+//         return {
+//             pb
+//         }
+// }
 
 export async function allArticles(){
     const records = await pb.collection('articles').getFullList<ArticlesResponse>({
