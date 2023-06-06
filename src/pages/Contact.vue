@@ -20,8 +20,8 @@
                 </div>
             </div>
 
-            <label for="email" class="text-violet mb-1 lg:ml-96" width="50px">Email (*) </label><p></p>
-            <input type="email" name="email" placeholder="Entrez votre adresse mail" required class="bg-grisbg border-2 rounded-md text-violet p-2 ml-0 m-1 mb-14 focus:outline-none focus:ring-2 focus:ring-rouge focus:border-0 lg:mx-96" >
+            <label for="email" class="text-violet mb-1 lg:ml-60" width="50px">Email (*) </label><p></p>
+            <input type="email" name="email" placeholder="Entrez votre adresse mail" required class="bg-grisbg border-2 rounded-md text-violet p-2 ml-0 m-1 mb-14 focus:outline-none focus:ring-2 focus:ring-rouge focus:border-0 lg:mx-" >
   
             <label for="sujet" class="text-violet mb-1 lg:ml-60" width="50px">Sujet du message (*)</label>
             <input type="text" name="sujet" placeholder="Entrez le sujet de votre demande" required class="bg-grisbg border-2 rounded-md text-violet p-2 m-1 ml-0 mb-5 focus:outline-none focus:ring-2 focus:ring-rouge focus:border-0 lg:mx-60">
