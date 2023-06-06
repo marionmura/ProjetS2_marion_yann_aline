@@ -11,8 +11,5 @@ const listeArticles = await allArticleSave()
 
 <template>
   <h1 class="font-bold">articles enregistrés</h1>
- 
-   <main>
-     <TemplatePreview v-for="unArticle of listeArticles" v-bind= "{...unArticle}" :v-key="unArticle.id"/>
-   </main>
+  <TemplatePreview v-for="unArticle of listeArticles" v-bind= "{...unArticle}" :v-key="unArticle.id"/>
  </template>
