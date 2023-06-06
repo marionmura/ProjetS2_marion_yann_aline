@@ -12,7 +12,10 @@ module.exports = {
       transparent: 'transparent',
       violet:'#92A1FF',
       rouge:'#FF8484',
-      vert:'#92FFB1'
+      vert:'#92FFB1',
+      couleurMarion : '#EB93AD',
+      couleurYann : '#FFADB0',
+      couleurAline : '#FFF1B9'
     },
     fontFamily: {
       jost: ['Jost', 'sans-serif'],
