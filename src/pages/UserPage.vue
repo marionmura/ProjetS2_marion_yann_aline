@@ -1,10 +1,11 @@
 <script setup lang="ts">
 import { onMounted, ref } from 'vue';
 import { useRouter } from 'vue-router';
-import { usepocketbase } from '@/backend'
+// import { usepocketbase } from '@/backend'
+import pocketbase from 'pocketbase';
 
-// let pb: any = null;
-const {pb} = usepocketbase();
+
+let pb: any = null;
 const currentUser = ref();
 const router = useRouter();
 
