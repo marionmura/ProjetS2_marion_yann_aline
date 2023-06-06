@@ -40,9 +40,7 @@ const sectionOpen = ref(1)
       <button class="button-v activebutton" :class="{'activebuttonclicked':sectionOpen == 6}" @click="sectionOpen = 6">info</button>
     </div>
 
-    <ul class="grid grid-cols-1 place-items-center mx-8 md:grid-cols-2 lg:grid-cols-3 gap-8 ">
-
-      <div v-if="sectionOpen == 1">
+       <ul class="grid grid-cols-1 place-items-center lg:mx-16 md:grid-cols-2 md:mx-4 lg:grid-cols-4 gap-4 " v-if="sectionOpen == 1">
         <li v-for="unArticle of listeArticles" v-bind= "{...unArticle}">
           <RouterLink
               :to="{
@@ -55,9 +53,9 @@ const sectionOpen = ref(1)
               <TemplatePreview  v-bind= "{...unArticle}" />
           </RouterLink>
         </li>
-      </div>
+      </ul>
 
-      <div v-if="sectionOpen == 2">
+      <ul class="grid grid-cols-1 place-items-center mx-8 md:grid-cols-2 lg:grid-cols-3 gap-8 " v-if="sectionOpen == 2">
         <li v-for="unArticleDesign of designArticles" v-bind= "{...unArticleDesign}">
           <RouterLink
               :to="{
@@ -70,9 +68,9 @@ const sectionOpen = ref(1)
               <TemplatePreview  v-bind= "{...unArticleDesign}" />
           </RouterLink>
         </li>
-      </div>
+      </ul>
 
-      <div v-if="sectionOpen == 3">
+      <ul class="grid grid-cols-1 place-items-center mx-8 md:grid-cols-2 lg:grid-cols-3 gap-8 " v-if="sectionOpen == 3">
         <li v-for="unArticleChat of chatArticles" v-bind= "{...unArticleChat}">
           <RouterLink
               :to="{
@@ -85,9 +83,9 @@ const sectionOpen = ref(1)
               <TemplatePreview  v-bind= "{...unArticleChat}" />
           </RouterLink>
         </li>
-      </div>
+      </ul>
 
-      <div v-if="sectionOpen == 4">
+      <ul class="grid grid-cols-1 place-items-center mx-8 md:grid-cols-2 lg:grid-cols-3 gap-8 " v-if="sectionOpen == 4">
         <li v-for="unArticleArt of artArticles" v-bind= "{...unArticleArt}">
           <RouterLink
               :to="{
@@ -100,9 +98,9 @@ const sectionOpen = ref(1)
               <TemplatePreview  v-bind= "{...unArticleArt}" />
           </RouterLink>
         </li>
-      </div>
+      </ul>
 
-      <div v-if="sectionOpen == 5">
+      <ul class="grid grid-cols-1 place-items-center mx-8 md:grid-cols-2 lg:grid-cols-3 gap-8 " v-if="sectionOpen == 5">
         <li v-for="unArticleTech of techArticles" v-bind= "{...unArticleTech}">
           <RouterLink
               :to="{
@@ -115,9 +113,9 @@ const sectionOpen = ref(1)
               <TemplatePreview  v-bind= "{...unArticleTech}" />
           </RouterLink>
         </li>
-      </div>
+      </ul>
 
-      <div v-if="sectionOpen == 6">
+      <ul class="grid grid-cols-1 place-items-center mx-8 md:grid-cols-2 lg:grid-cols-4 gap-8 " v-if="sectionOpen == 6">
         <li v-for="unArticleInfo of infoArticles" v-bind= "{...unArticleInfo}">
           <RouterLink
               :to="{
@@ -130,9 +128,8 @@ const sectionOpen = ref(1)
               <TemplatePreview  v-bind= "{...unArticleInfo}" />
           </RouterLink>
         </li>
-      </div>
+      </ul>
       
-    </ul>
      
    </main>
  </template>
