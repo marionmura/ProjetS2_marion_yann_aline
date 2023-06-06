@@ -10,8 +10,8 @@ const currentUser = ref();
 const router = useRouter();
 
 onMounted(async () => {
-  pb = new pocketbase('http://127.0.0.1:8090');
-  // pb = new pocketbase('http://projets2.marionmura.fr:9002');
+  //pb = new pocketbase('http://127.0.0.1:8090');
+  pb = new pocketbase('http://projets2.marionmura.fr:9002');
   !pb.authStore.isValid && router.replace("/Connexion")
   currentUser.value = pb.authStore.isValid ? pb.authStore.model : null;
 })

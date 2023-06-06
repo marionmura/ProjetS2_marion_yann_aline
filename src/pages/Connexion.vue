@@ -19,8 +19,8 @@ const username = ref("");
 const loginMode = ref(true);
 
 onMounted(async () => {
-  pb = new pocketbase('http://127.0.0.1:8090');
-  // pb = new pocketbase('http://projets2.marionmura.fr:9002');
+  // pb = new pocketbase('http://127.0.0.1:8090');
+  pb = new pocketbase('http://projets2.marionmura.fr:9002');
 
   pb.authStore.onChange(()=>{
     currentUser.value = pb.authStore.model

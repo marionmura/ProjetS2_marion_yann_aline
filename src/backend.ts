@@ -1,9 +1,9 @@
 import pocketbase from 'pocketbase';
 import { ref } from 'vue';
 import type{ ArticlesResponse } from './pocketbase-types';
-export const pb = new pocketbase('http://127.0.0.1:8090');
+// export const pb = new pocketbase('http://127.0.0.1:8090');
 
-// export const pb = new pocketbase('http://projets2.marionmura.fr:9002');
+export const pb = new pocketbase('http://projets2.marionmura.fr:9002');
 
 // export const usepocketbase = () => {
 //         let pb = ref(null);
