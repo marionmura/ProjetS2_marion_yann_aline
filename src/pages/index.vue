@@ -31,6 +31,16 @@ const sectionOpen = ref(1)
  
    <main>
 
+    <div class="flex flex-col py-12 items-center lg:flex-row lg:justify-center lg:gap-14 lg:py-20">
+      <div>
+        <h1 class="font-cabin text-4xl mb-1">RepertorIA</h1>
+        <h2>Le site qui répertorie toutes les IA</h2>
+      </div>
+      <div class="flex justify-center mt-5">
+        <img class="h-36 w-fit lg:h-44" src="@/img/robot_accueil.png" alt="Robot de l'accueil">
+      </div>
+    </div>
+
     <div class="flex gap-4 place-content-center py-2">
       <button class="button-v activebutton" :class="{'activebuttonclicked':sectionOpen == 1}" @click="sectionOpen = 1">tout</button>
       <button class="button-v activebutton" :class="{'activebuttonclicked':sectionOpen == 2}" @click="sectionOpen = 2">musique</button>
