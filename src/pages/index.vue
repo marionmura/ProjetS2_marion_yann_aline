@@ -50,7 +50,7 @@ const sectionOpen = ref(1)
       <button class="button-v activebutton" :class="{'activebuttonclicked':sectionOpen == 6}" @click="sectionOpen = 6">info</button>
     </div>
 
-       <ul class="py-2 grid grid-cols-1 place-items-center lg:mx-16 md:grid-cols-2 md:mx-4 lg:grid-cols-4 gap-4 " v-if="sectionOpen == 1">
+       <ul class="py-2 grid grid-cols-1 place-items-center lg:mx-16 md:grid-cols-2 md:mx-4 lg:grid-cols-4 gap-4" v-if="sectionOpen == 1">
         <li v-for="unArticle of listeArticles" v-bind= "{...unArticle}">
           <RouterLink
               :to="{

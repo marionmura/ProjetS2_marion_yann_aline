@@ -82,7 +82,7 @@ const doCreerCompte = async () => {
         <button class="button-v activebutton" :class="{'activebuttonclicked':userOpen == 2}" @click="userOpen = 2">Enregistrés</button>
       </div>
 
-      <ul class="grid grid-cols-1 place-items-center mx-8 md:grid-cols-2 lg:grid-cols-3 gap-4 ">
+      <ul class="py-2 grid grid-cols-1 place-items-center lg:mx-16 md:grid-cols-2 md:mx-4 lg:grid-cols-4 gap-4">
         <div v-if="userOpen == 1">
           <li v-for="unFavori of articlesFavori" v-bind= "{...unFavori}">
             <RouterLink
