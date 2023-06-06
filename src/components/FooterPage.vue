@@ -59,7 +59,7 @@ import {RouterLink} from 'vue-router'
 
             <ul class="flex flex-row gap-4">
                 <li><Tiktok /></li>
-                <li><Instagram /></li>
+                <li><a href="https://www.instagram.com/repertoria_/"><Instagram /></a></li>
                 <li><Facebook/></li>
                 <li><Twitter/></li>
             </ul>
