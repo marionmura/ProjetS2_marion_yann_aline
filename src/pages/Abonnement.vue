@@ -4,7 +4,7 @@ import Usericon from '../components/icons/Usericon.vue'
 
 
 <template>
-    <main class="bg-grisbg text-white px-[2rem] ">
+    <main class="bg-grisbg text-white mx-[2rem] lg:mx-64 ">
         <div class="border border-violet p-2 rounded-lg
         ">
             <div class="flex flex-row justify-around  items-center ">

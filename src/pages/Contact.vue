@@ -8,7 +8,7 @@
     <form>
         <div class="mt-5 flex flex-col mr-[2rem] ml-[2rem] text-white">
             
-            <div class="lg:flex lg:mx-64 lg:justify-between">
+            <div class="lg:flex lg:mx-64 lg:justify-start lg:gap-8">
                 <div class="flex flex-col">
                     <label for="nom" class="text-violet mb-1" width="50px">Nom (*)</label>
                     <input type="text" name="nom" placeholder="Entrez votre nom" required class="bg-grisbg border-2 rounded-md text-violet p-2 m-1 ml-0 mb-5 focus:outline-none focus:ring-2 focus:ring-rouge focus:border-0">
@@ -20,14 +20,14 @@
                 </div>
             </div>
 
-            <label for="email" class="text-violet mb-1 lg:ml-96" width="50px">Email (*) </label><p></p>
-            <input type="email" name="email" placeholder="Entrez votre adresse mail" required class="bg-grisbg border-2 rounded-md text-violet p-2 ml-0 m-1 mb-14 focus:outline-none focus:ring-2 focus:ring-rouge focus:border-0 lg:mx-96" >
+            <label for="email" class="text-violet mb-1 lg:ml-64" width="50px">Email (*) </label><p></p>
+            <input type="email" name="email" placeholder="Entrez votre adresse mail" required class="bg-grisbg border-2 rounded-md text-violet p-2 ml-0 m-1 mb-14 focus:outline-none focus:ring-2 focus:ring-rouge focus:border-0 lg:ml-64 lg:mr-64" >
   
-            <label for="sujet" class="text-violet mb-1 lg:ml-60" width="50px">Sujet du message (*)</label>
-            <input type="text" name="sujet" placeholder="Entrez le sujet de votre demande" required class="bg-grisbg border-2 rounded-md text-violet p-2 m-1 ml-0 mb-5 focus:outline-none focus:ring-2 focus:ring-rouge focus:border-0 lg:mx-60">
+            <label for="sujet" class="text-violet mb-1 lg:ml-64" width="50px">Sujet du message (*)</label>
+            <input type="text" name="sujet" placeholder="Entrez le sujet de votre demande" required class="bg-grisbg border-2 rounded-md text-violet p-2 m-1 ml-0 mb-5 focus:outline-none focus:ring-2 focus:ring-rouge focus:border-0 lg:mx-64">
         
-            <label for="nom" class="text-violet mb-1 lg:ml-60" width="50px">Message (*)</label>
-            <textarea name="message" rows="5" placeholder="Entrez votre message" required class="bg-grisbg border-2 rounded-md text-violet p-2 m-1 ml-0 mb-10 focus:outline-none focus:ring-2 focus:ring-rouge focus:border-0 lg:mx-60"></textarea>
+            <label for="nom" class="text-violet mb-1 lg:ml-64" width="50px">Message (*)</label>
+            <textarea name="message" rows="5" placeholder="Entrez votre message" required class="bg-grisbg border-2 rounded-md text-violet p-2 m-1 ml-0 mb-10 focus:outline-none focus:ring-2 focus:ring-rouge focus:border-0 lg:mx-64"></textarea>
         
             <div class="mb-3 lg:mx-60">
                 <input class="rounded-full mr-2" type="checkbox" id="polcon" name="polcon" required>
