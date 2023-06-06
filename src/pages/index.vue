@@ -31,7 +31,7 @@ const sectionOpen = ref(1)
  
    <main>
 
-    <div class="flex gap-4 place-content-center">
+    <div class="flex gap-4 place-content-center py-2">
       <button class="button-v activebutton" :class="{'activebuttonclicked':sectionOpen == 1}" @click="sectionOpen = 1">tout</button>
       <button class="button-v activebutton" :class="{'activebuttonclicked':sectionOpen == 2}" @click="sectionOpen = 2">musique</button>
       <button class="button-v activebutton" :class="{'activebuttonclicked':sectionOpen == 3}" @click="sectionOpen = 3">chat</button>
@@ -40,7 +40,7 @@ const sectionOpen = ref(1)
       <button class="button-v activebutton" :class="{'activebuttonclicked':sectionOpen == 6}" @click="sectionOpen = 6">info</button>
     </div>
 
-       <ul class="grid grid-cols-1 place-items-center lg:mx-16 md:grid-cols-2 md:mx-4 lg:grid-cols-4 gap-4 " v-if="sectionOpen == 1">
+       <ul class="py-2 grid grid-cols-1 place-items-center lg:mx-16 md:grid-cols-2 md:mx-4 lg:grid-cols-4 gap-4 " v-if="sectionOpen == 1">
         <li v-for="unArticle of listeArticles" v-bind= "{...unArticle}">
           <RouterLink
               :to="{
@@ -55,7 +55,7 @@ const sectionOpen = ref(1)
         </li>
       </ul>
 
-      <ul class="grid grid-cols-1 place-items-center mx-8 md:grid-cols-2 lg:grid-cols-3 gap-8 " v-if="sectionOpen == 2">
+      <ul class="py-2 grid grid-cols-1 place-items-center mx-8 md:grid-cols-2 lg:grid-cols-3 gap-8 " v-if="sectionOpen == 2">
         <li v-for="unArticleDesign of designArticles" v-bind= "{...unArticleDesign}">
           <RouterLink
               :to="{
@@ -70,7 +70,7 @@ const sectionOpen = ref(1)
         </li>
       </ul>
 
-      <ul class="grid grid-cols-1 place-items-center mx-8 md:grid-cols-2 lg:grid-cols-3 gap-8 " v-if="sectionOpen == 3">
+      <ul class="py-2 grid grid-cols-1 place-items-center mx-8 md:grid-cols-2 lg:grid-cols-3 gap-8 " v-if="sectionOpen == 3">
         <li v-for="unArticleChat of chatArticles" v-bind= "{...unArticleChat}">
           <RouterLink
               :to="{
@@ -85,7 +85,7 @@ const sectionOpen = ref(1)
         </li>
       </ul>
 
-      <ul class="grid grid-cols-1 place-items-center mx-8 md:grid-cols-2 lg:grid-cols-3 gap-8 " v-if="sectionOpen == 4">
+      <ul class="py-2 grid grid-cols-1 place-items-center mx-8 md:grid-cols-2 lg:grid-cols-3 gap-8 " v-if="sectionOpen == 4">
         <li v-for="unArticleArt of artArticles" v-bind= "{...unArticleArt}">
           <RouterLink
               :to="{
@@ -100,7 +100,7 @@ const sectionOpen = ref(1)
         </li>
       </ul>
 
-      <ul class="grid grid-cols-1 place-items-center mx-8 md:grid-cols-2 lg:grid-cols-3 gap-8 " v-if="sectionOpen == 5">
+      <ul class="py-2 grid grid-cols-1 place-items-center mx-8 md:grid-cols-2 lg:grid-cols-3 gap-8 " v-if="sectionOpen == 5">
         <li v-for="unArticleTech of techArticles" v-bind= "{...unArticleTech}">
           <RouterLink
               :to="{
@@ -115,7 +115,7 @@ const sectionOpen = ref(1)
         </li>
       </ul>
 
-      <ul class="grid grid-cols-1 place-items-center mx-8 md:grid-cols-2 lg:grid-cols-4 gap-8 " v-if="sectionOpen == 6">
+      <ul class="py-2 grid grid-cols-1 place-items-center mx-8 md:grid-cols-2 lg:grid-cols-4 gap-8 " v-if="sectionOpen == 6">
         <li v-for="unArticleInfo of infoArticles" v-bind= "{...unArticleInfo}">
           <RouterLink
               :to="{

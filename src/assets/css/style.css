@@ -19,7 +19,7 @@
       @apply font-jost lg:text-lg;
     }
     main{
-      @apply bg-grisbg text-white;
+      @apply bg-grisbg text-white min-h-screen;
     }
     
   }
