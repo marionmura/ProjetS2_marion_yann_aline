@@ -2,8 +2,6 @@
 import { Collections } from '@/pocketbase-types';
 import type { ArticlesResponse } from '@/pocketbase-types';
 
-import TemplateArticle from '@/components/TemplateArticle.vue';
-
 import { allArticleFavori } from '@/backend';
   
 const listeArticles = await allArticleFavori()
@@ -17,6 +15,6 @@ const listeArticles = await allArticleFavori()
   <h1 class="font-bold">articles favori</h1>
  
    <main>
-     <TemplateArticle v-for="unArticle of listeArticles" v-bind= "{...unArticle}" :v-key="unArticle.id"/>
+     <TemplatePreviewVue v-for="unArticle of listeArticles" v-bind= "{...unArticle}" :v-key="unArticle.id"/>
    </main>
  </template>

@@ -60,7 +60,7 @@ function menuIsClosed() {
             <ul class=" mt-[50px] ml-[30px] mb-5 space-x-10 flex flex-col gap-4 lg:flex-row">
                 <li class="flex flex-row gap-4"><menu_FlameIcon/><a class="menu-link" >IA tendances</a></li>
                 <li><a class="menu-link" href="">Articles récents</a></li>
-                <li><a class="mennu-link" href="">Tous les articles</a></li>
+                <li><a class="menu-link" href="">Tous les articles</a></li>
             </ul>
 
             <div class=" mt-8 ml-10 flex-col align-center items-center lg:flex mr-10">
