@@ -97,7 +97,9 @@ const doCreerCompte = async () => {
             </RouterLink>
           </li>
         </div>
+      </ul>
 
+      <ul class="py-2 grid grid-cols-1 place-items-center lg:mx-16 md:grid-cols-2 md:mx-4 lg:grid-cols-4 gap-4">
         <div v-if="userOpen == 2">
           <li v-for="unSave of articlesSave" v-bind= "{...unSave}">
             <RouterLink

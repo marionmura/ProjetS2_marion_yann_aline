@@ -20,6 +20,14 @@ export async function allArticles(){
     return records;
 }
 
+export async function allArticlesCategories(categorie:string){
+    const records = await pb.collection('articles').getFullList<ArticlesResponse>({
+        '$autoCancel': false,
+        filter: `categorie = ${categorie}`
+    });
+    return records;
+}
+
 export async function allArticleFavori(){
     const favarticles =await pb.collection('articles').getFullList<ArticlesResponse>({filter : 'favori=True',
         '$autoCancel': false,

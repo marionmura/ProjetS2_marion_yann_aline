@@ -1,14 +1,15 @@
 <script setup lang="ts">
-import { allArticles, pb } from '@/backend';
+import { allArticles, allArticlesCategories, pb } from '@/backend';
 import type { ArticlesResponse } from '@/pocketbase-types';
-
 
 import Ampouleicon from '@/components/icons/Ampouleicon.vue';
 
 const props: ArticlesResponse = defineProps<ArticlesResponse>();
 const img0= props.image
 const urlImg = pb.files.getUrl(props, img0, { thumb: '100x200' })
+
 const listeArticles = await allArticles();
+// const listeArticlesCategories = await allArticles({{  }});
 </script>
 
 <template>
@@ -62,7 +63,20 @@ const listeArticles = await allArticles();
             <h2 class="text-violet mt-8 text-center lg:text-white lg:font-cabin lg:text-2xl lg:uppercase font-medium">Articles similaires</h2>
             <hr class="text-violet pb-8 text-center lg:relative lg:left-20 lg:ml-30 lg:border-t-2">
 
-            
+            <!-- <ul class="py-2 grid grid-cols-1 place-items-center lg:mx-16 md:grid-cols-2 md:mx-4 lg:grid-cols-4 gap-4">
+                    <li v-for="unAutre of await allArticlesCategories({{ categorie }})" v-bind= "{...unFavori}">
+                        <RouterLink
+                            :to="{
+                            name: 'articles-id',
+                            params: {
+                            id: unFavori.id
+                            }
+                            }"
+                        >
+                            <TemplatePreview  v-bind= "{...unFavori}" />
+                        </RouterLink>
+                    </li>
+            </ul> -->
         </div>
         
     </main>
