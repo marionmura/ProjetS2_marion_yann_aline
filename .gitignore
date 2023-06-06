@@ -36,3 +36,4 @@ coverage
 # /pocketbase/pocketbase.exe
 # /pocketbase/CHANGELOG.md
 # /pocketbase/LICENSE.md
+PocketBase/pb_data/logs.db
