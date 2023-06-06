@@ -32,24 +32,21 @@ export type AuthSystemFields<T = never> = {
 
 // Record types for each collection
 
-export enum ArticlesHastagsOptions {
-	"art" = "art",
-	"infos" = "infos",
-	"tech" = "tech",
-	"design" = "design",
-	"info" = "info",
-	"photo" = "photo",
-	"music" = "music",
-	"generative" = "generative",
-	"openAI" = "openAI",
-}
 export type ArticlesRecord = {
-	image?: string
-	nom?: string
+	nom_IA?: string
 	paragraphe?: string
+	image?: string
 	enregistrement?: boolean
 	favori?: boolean
-	hastags?: ArticlesHastagsOptions[]
+	categorie?: string
+	concepteur_IA?: string
+	fonctionnalites_1?: string
+	fonctionnalites_2?: string
+	fonctionnalites_3?: string
+	utilisation?: string
+	premium?: string
+	images_utilisations?: string[]
+	tuto_pour_utilisation?: string
 }
 
 export type CarrouselRecord = {

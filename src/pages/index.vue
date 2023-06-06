@@ -2,14 +2,14 @@
 import TemplatePreview from '@/components/TemplatePreview.vue';
 
 import { allArticles } from '@/backend';
-import { IAdesign } from '@/backend';
+import { IAmusic } from '@/backend';
 import { IAchat } from '@/backend';
 import { IAart } from '@/backend';
 import { IAtech } from '@/backend';
 import { IAinfo } from '@/backend';
 
 const listeArticles = await allArticles();
-const designArticles = await IAdesign();
+const designArticles = await IAmusic();
 const chatArticles = await IAchat();
 const artArticles = await IAart();
 const techArticles = await IAtech();
@@ -33,14 +33,14 @@ const sectionOpen = ref(1)
 
     <div class="flex gap-4 place-content-center">
       <button class="button-v activebutton" :class="{'activebuttonclicked':sectionOpen == 1}" @click="sectionOpen = 1">tout</button>
-      <button class="button-v activebutton" :class="{'activebuttonclicked':sectionOpen == 2}" @click="sectionOpen = 2">design</button>
+      <button class="button-v activebutton" :class="{'activebuttonclicked':sectionOpen == 2}" @click="sectionOpen = 2">musique</button>
       <button class="button-v activebutton" :class="{'activebuttonclicked':sectionOpen == 3}" @click="sectionOpen = 3">chat</button>
       <button class="button-v activebutton" :class="{'activebuttonclicked':sectionOpen == 4}" @click="sectionOpen = 4">art</button>
       <button class="button-v activebutton" :class="{'activebuttonclicked':sectionOpen == 5}" @click="sectionOpen = 5">tech</button>
       <button class="button-v activebutton" :class="{'activebuttonclicked':sectionOpen == 6}" @click="sectionOpen = 6">info</button>
     </div>
 
-    <ul class="grid grid-cols-1 place-items-center mx-8 md:grid-cols-2 lg:grid-cols-3 gap-4 ">
+    <ul class="grid grid-cols-1 place-items-center mx-8 md:grid-cols-2 lg:grid-cols-3 gap-8 ">
 
       <div v-if="sectionOpen == 1">
         <li v-for="unArticle of listeArticles" v-bind= "{...unArticle}">

@@ -3,6 +3,8 @@ import { ref } from 'vue';
 import type{ ArticlesResponse } from './pocketbase-types';
 export const pb = new pocketbase('http://127.0.0.1:8090');
 
+// export const pb = new pocketbase('http://projets2.marionmura.fr:9002');
+
 // export const usepocketbase = () => {
 //         let pb = ref(null);
 //         pb.value = new pocketbase('http://127.0.0.1:8090');
@@ -38,9 +40,9 @@ export async function oneIA(id:string){
     return oneia;
 }
 
-export async function IAdesign(){
+export async function IAmusic(){
     const records = await pb.collection('articles').getFullList<ArticlesResponse>({
-        filter: `categorie = "design" `,
+        filter: `categorie = "musique" `,
         '$autoCancel': false
     });
     return records;
