@@ -39,13 +39,8 @@ function menuIsClosed() {
 
             <div class="hidden h-[0] w-[0]  lg:visible lg:h-[20px]  lg:flex lg:flex-row lg:w-full lg:justify-end items-center ">
                 <RouterLink to="/Connexion">
-                    <button class="flex-1 m-2 p-2 bg-white rounded-lg text-noirbackground font-bold " >Connexion</button>
+                    <button class="flex-1 m-2 p-2 bg-violet rounded-lg text-noirbackground font-bold " >Connexion / Inscription</button>
                 </RouterLink>
-
-                <RouterLink to="/Inscription">
-                        <button class="flex-1 m-2 p-2 bg-violet text-noirbackground font-bold rounded-lg">S'inscrire</button>
-                    </RouterLink>
-
             </div>
         </div>
         <nav class="invisible opacity-0  lg:hidden lg:relative fixed inset-0 h-screen w-screen bg-noirbackground"  :class="{'!visible !opacity-100':menuIsOpen}" 	v-scroll-lock="menuIsOpen">
