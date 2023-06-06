@@ -68,7 +68,11 @@ const doCreerCompte = async () => {
     </div>
 
     <div v-else>
-      <h1 class="ml-[2rem] mr-[2rem] p-4 text-center text-violet border-2 rounded-lg">{{ loginMode ? "Se connecter" : "S'inscrire" }}</h1>
+      <div class="space-y-2 bg-noirbackground lg:bg-transparent lg:mb-10">
+        <h1 class="text-violet pt-10 text-center lg:text-white lg:font-cabin lg:text-left lg:px-12 font-medium text-2xl">{{ loginMode ? "Se connecter" : "S'inscrire" }}</h1>
+        <hr class="text-violet lg:relative lg:border-t-2 lg:hidden">
+    </div>
+
       <form>
         <div class="mt-5 flex flex-col mr-[2rem] ml-[2rem] text-white">
           
@@ -78,16 +82,15 @@ const doCreerCompte = async () => {
           <label for="password" class="text-violet mb-1" width="50px">Mot de passe (*) </label><p></p>
           <input v-model="password" type="password" name="password" placeholder="Entrez votre mot de passe (8 caractères minimum)" required class="bg-grisbg border-2 rounded-md text-violet p-2 ml-0 m-1 mb-5 focus:outline-none focus:ring-2 focus:ring-rouge focus:border-0" >
       
-          <!-- <p class="text-violet border-b-2 w-[200px]" v-on:click="reset()">J'ai oublié mon mot de passe</p> -->
         </div>
       </form>
     
       <div v-if="loginMode">
-        <div class="flex flex-row justify-end mt-5 pb-[10px]">
-          <button @click="doSeConnecter" class="p-1 pl-3 pr-3 m-1 font-bold rounded-full text-noirbackground bg-white">Connexion</button>
-
-          <button @click="loginMode = false" class="p-1 pl-3 pr-3 m-1 font-bold rounded-full text-white bg-grisfooter" v-on:click="">S'inscrire</button>  
+        <div class="flex font-bold text-lg p-3 justify-center mb-8">
+          <button @click="doSeConnecter" class="bg-white text-grisbg rounded-full py-2 px-14 lg:cursor-pointer">Connexion</button>
         </div>
+          <button @click="loginMode = false" class="p-1 pl-3 pr-3 m-1 mb-10 mx-6 font-bold rounded-lg text-white border border-1 border-violet" v-on:click="">Pas encore de compte ? Inscrivez-vous GRATUITEMENT dès maintenant</button>  
+        
       </div>
 
       <div v-else>
@@ -103,6 +106,7 @@ const doCreerCompte = async () => {
       </div>
     </div>
 
+    <p class="text-sm p-1 lg:p-5">Les champs avec (*) sont obligatoires</p>
   </main>
 </template>
 
